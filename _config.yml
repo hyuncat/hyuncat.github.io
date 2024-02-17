@@ -16,9 +16,9 @@ title_separator          : "-"
 subtitle                 :
 name                     : "Sarah Hong"
 description              : "Sarah Hong's personal website and blog"
-url                      : "https://ssh2198.github.io"
+url                      : "https://hyuncat.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "ssh2198/ssh2198.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "hyuncat/hyuncat.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   :
 logo                     :
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -119,7 +119,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/ssh2198"
+      url: "https://github.com/hyuncat"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/sarahhxng"
@@ -135,7 +135,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/ssh2198"
+      url: "https://github.com/hyuncat"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -271,12 +271,17 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "posts/"
       type: posts
     values:
       layout: single
@@ -285,3 +290,13 @@ defaults:
       comments: true
       share: true
       related: true
+  # _guides
+  - scope:
+      path: "guides/"
+      type: guides
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+
