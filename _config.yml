@@ -101,7 +101,7 @@ analytics:
 author:
   name             : "Sarah Hong"
   avatar           : "/assets/images/sarah_avatar.jpg"
-  bio              : "Undergraduate student interested in machine learning and applied mathematics"
+  bio              : "Undergraduate student studying computer science and applied mathematics"
   location         : "New York, NY"
   email            : "ssh2198@columbia.edu"
   links:
@@ -251,17 +251,18 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -272,16 +273,16 @@ compress_html:
     envs: development
 
 # Collections
-collections:
-  guides:
-    output: true
-    permalink: /:collection/:path/
+# collections:
+#   guides:
+#     output: true
+#     permalink: /:guides/:path/
 
 # Defaults
 defaults:
   # _posts
   - scope:
-      path: "posts/"
+      path: ""
       type: posts
     values:
       layout: single
@@ -291,12 +292,14 @@ defaults:
       share: true
       related: true
   # _guides
-  - scope:
-      path: "guides/"
-      type: guides
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      share: true
+  # - scope:
+  #     path: "guides/"
+  #     type: guides
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     read_time: true
+  #     comments: true
+  #     share: true
+  #     related: true
 
