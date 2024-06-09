@@ -122,12 +122,26 @@ class ProjectVisualizer {
 
         // Track whether a box is being dragged
         this.isDragging = false;
+        this.isMouseDown = false;
 
         Matter.Events.on(mouseConstraint, 'startdrag', () => {
             this.isDragging = true;
         });
         Matter.Events.on(mouseConstraint, 'enddrag', () => {
-            this.isDragging = false;
+            setTimeout(() => {
+                this.isDragging = false;
+            }, 100); // Small delay to reset dragging flag
+        });
+
+        this.render.canvas.addEventListener('mousedown', () => {
+            this.isMouseDown = true;
+        });
+
+        this.render.canvas.addEventListener('mouseup', (event) => {
+            if (!this.isDragging && this.isMouseDown) {
+                this.handleClick(event);
+            }
+            this.isMouseDown = false;
         });
     }
 
@@ -135,7 +149,7 @@ class ProjectVisualizer {
         this.render.canvas.addEventListener('mousemove', (event) => {
             const mousePos = this.render.mouse.absolute;
             let foundHoveredBox = false;
-
+    
             this.boxes.forEach(box => {
                 if (Matter.Bounds.contains(box.bounds, mousePos)) {
                     // Change box color and display info
@@ -149,19 +163,68 @@ class ProjectVisualizer {
                     this.showOverlay = false;
                 }
             });
-
+    
             if (!foundHoveredBox) {
                 this.hoveredBox = null;
             }
         });
+    
+        // Add afterRender event to draw text on hovered box
+        Matter.Events.on(this.render, 'afterRender', () => {
+            if (this.hoveredBox) {
+                const context = this.render.context;
+                const box = this.hoveredBox;
 
-        this.render.canvas.addEventListener('click', (event) => {
-            if (!this.isDragging && this.hoveredBox) {
-                const project = this.hoveredBox.project;
-                window.location.href = project.url;
+                context.save(); // Save the current state of the context
+
+                // Translate to the position of the box
+                context.translate(box.position.x, box.position.y);
+
+                // Rotate the context to the angle of the box
+                context.rotate(box.angle);
+
+                context.font = '20px Arial';
+                context.fillStyle = 'white';
+                context.textAlign = 'center';
+                context.textBaseline = 'middle'; // Align the middle of the text to the y-coordinate
+
+                // Calculate the maximum width of the text
+                const maxWidth = box.bounds.max.x - box.bounds.min.x;
+
+                // Split the text into lines
+                const lines = wrapText(context, box.project.title, maxWidth);
+
+                // Draw each line separately
+                lines.forEach((line, index) => {
+                    context.fillText(line, 0, 0 + (index * 20)); // Adjust the y-coordinate based on the line number
+                });
+
+                context.restore(); // Restore the context to its previous state
             }
         });
     }
+}
+
+function wrapText(context, text, maxWidth) {
+    const words = text.split(' ');
+    const lines = [];
+    let line = '';
+
+    words.forEach((word) => {
+        const testLine = line + word + ' ';
+        const metrics = context.measureText(testLine);
+        const testWidth = metrics.width;
+
+        if (testWidth > maxWidth && line !== '') {
+            lines.push(line);
+            line = word + ' ';
+        } else {
+            line = testLine;
+        }
+    });
+
+    lines.push(line);
+    return lines;
 }
 
 export default ProjectVisualizer;

@@ -14,8 +14,30 @@ permalink: /projects/
 
   document.addEventListener('DOMContentLoaded', () => {
     const projects = [
-      { imgPath: '/assets/images/projects/sarah_avatar.jpg', title: 'RichStudio', info: 'Clusteringggg', url: '/projects/' },
-      { imgPath: '/assets/images/projects/pretty.jpeg', title: 'Playlistify', info: 'Music stuff', url: '/projects/' }
+    { 
+        imgPath: '/assets/images/projects/richstudio.png', 
+        title: 'RichStudio', 
+        info: 'Clusteringggg', 
+        url: 'https://github.com/hyuncat/RichStudio' 
+    },
+    {   
+        imgPath: '/assets/images/projects/playlistify2.png', 
+        title: 'Playlistify', 
+        info: 'Music stuff', 
+        url: 'https://github.com/hyuncat/playlistify' 
+    },
+    {   
+        imgPath: '/assets/images/projects/origami.png', 
+        title: 'DNA Coloring Algorithm', 
+        info: 'Coloring', 
+        url: 'https://github.com/hyuncat/DNA-origami' 
+    },
+    { 
+        imgPath: '/assets/images/projects/integral.png', 
+        title: 'daily-integral', 
+        info: 'Yay math', 
+        url: 'https://github.com/hyuncat/daily-integral' 
+    }
     ];
 
     console.log("Initializing ProjectVisualizer with projects:", projects);
