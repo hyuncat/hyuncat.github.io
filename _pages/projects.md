@@ -14,8 +14,8 @@ permalink: /projects/
 
   document.addEventListener('DOMContentLoaded', () => {
     const projects = [
-      { imgPath: '/assets/images/sarah_avatar.jpg', title: 'RichStudio', info: 'Clusteringggg', url: '/projects/' },
-      { imgPath: '/assets/images/pretty.jpeg', title: 'Playlistify', info: 'Music stuff', url: '/projects/' }
+      { imgPath: '/assets/images/projects/sarah_avatar.jpg', title: 'RichStudio', info: 'Clusteringggg', url: '/projects/' },
+      { imgPath: '/assets/images/projects/pretty.jpeg', title: 'Playlistify', info: 'Music stuff', url: '/projects/' }
     ];
 
     console.log("Initializing ProjectVisualizer with projects:", projects);

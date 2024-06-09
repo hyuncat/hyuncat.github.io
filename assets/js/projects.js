@@ -5,13 +5,27 @@
 class ProjectVisualizer {
     constructor(projects, containerId) {
         this.containerId = containerId;
-        this.projects = projects;
+        this.projects = projects.map(project => {
+            return {
+                ...project,
+                darkImgPath: project.imgPath.replace('/assets/images/projects', '/assets/images/projects/dark/')
+            };
+        });
         this.container = document.getElementById(containerId); // Access the container element
 
         this.initMatter();
     }
 
-    initMatter() {
+    loadImage(src) {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.src = src;
+            img.onload = () => resolve(img);
+            img.onerror = (err) => reject(err);
+        });
+    }
+
+    async initMatter() {
         // Create an engine
         this.engine = Matter.Engine.create();
         this.world = this.engine.world;
@@ -51,10 +65,12 @@ class ProjectVisualizer {
         // Create boxes for each project
         this.boxWidth = 150;
         this.boxHeight = 150;
-        this.boxes = this.projects.map(project => {
-            let img = new Image();
-            img.src = project.imgPath;
-        
+        this.boxes = []
+
+        for (let project of this.projects) {
+            let img = await this.loadImage(project.imgPath);
+            let darkImg = await this.loadImage(project.darkImgPath);
+
             const box = Matter.Bodies.rectangle(
                 Math.random() * (this.container.offsetWidth - 200) + this.boxWidth / 2,
                 Math.random() * (this.container.offsetHeight - 300) + this.boxHeight / 2,
@@ -62,27 +78,20 @@ class ProjectVisualizer {
                 {
                     isStatic: false,
                     render: {
-                        fillStyle: '#91B6E2',
                         sprite: {
-                            texture: project.imgPath
+                            texture: project.imgPath,
+                            xScale: this.boxWidth / img.naturalWidth,
+                            yScale: this.boxHeight / img.naturalHeight
                         }
                     },
-                    project: project
+                    project: project,
+                    originalTexture: project.imgPath,
+                    darkTexture: project.darkImgPath
                 }
             );
-        
-            img.onload = () => {
-                const scaleX = this.boxWidth / img.naturalWidth;
-                const scaleY = this.boxHeight / img.naturalHeight;
-                const scale = Math.min(scaleX, scaleY);
-        
-                box.render.sprite.xScale = scaleX;
-                box.render.sprite.yScale = scaleY;
-            };
-        
-            return box;
-        });
-        Matter.World.add(this.world, this.boxes);
+            this.boxes.push(box);
+            Matter.World.add(this.world, box);
+        }
 
         // Setup mouse constraints to allow dragging
         this.setupMouseConstraint();
@@ -125,34 +134,31 @@ class ProjectVisualizer {
     addHoverAndClickEvents() {
         this.render.canvas.addEventListener('mousemove', (event) => {
             const mousePos = this.render.mouse.absolute;
+            let foundHoveredBox = false;
+
             this.boxes.forEach(box => {
                 if (Matter.Bounds.contains(box.bounds, mousePos)) {
                     // Change box color and display info
-                    box.render.fillStyle = '#ffcc00'; // Change color on hover
-                    const project = box.project;
-                    const context = this.render.context;
-                    context.fillStyle = '#000';
-                    context.fillText(project.info, box.position.x - 75, box.position.y - 20);
+                    box.render.sprite.texture = box.darkTexture;
+                    this.showOverlay = true;
+                    this.hoveredBox = box;
+                    foundHoveredBox = true;
                 } else {
                     // Reset box color
-                    box.render.fillStyle = '#91B6E2'; // Reset color
+                    box.render.sprite.texture = box.originalTexture;
+                    this.showOverlay = false;
                 }
             });
-        });
 
-        this.render.canvas.addEventListener('mouseout', () => {
-            tooltip.style.display = 'none';
+            if (!foundHoveredBox) {
+                this.hoveredBox = null;
+            }
         });
 
         this.render.canvas.addEventListener('click', (event) => {
-            if (!this.isDragging) {
-                const mousePos = this.render.mouse.absolute;
-                this.boxes.forEach(box => {
-                    if (Matter.Bounds.contains(box.bounds, mousePos)) {
-                        const project = box.project;
-                        window.location.href = project.url;
-                    }
-                });
+            if (!this.isDragging && this.hoveredBox) {
+                const project = this.hoveredBox.project;
+                window.location.href = project.url;
             }
         });
     }
