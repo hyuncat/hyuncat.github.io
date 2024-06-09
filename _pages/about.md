@@ -6,17 +6,7 @@ author_profile: true
 header:
   image: /assets/images/pretty.jpeg
 ---
-<style>
-  #network-graph {
-    width: 60vh;
-    height: 60vh;
-    border: 2px solid #ccc; 
-    box-sizing: border-box;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-</style>
-
+{% include inline-network.html %}
 
 ## Hello! 👋
 I'm Sarah, I'm a 2nd year undergraduate at Columbia University majoring in computer science and applied mathematics. I'm interested in algorithm development, machine learning, and probability theory (admittedly very broad interests) which tie together the various projects I work on.
@@ -41,19 +31,21 @@ Lately I've been really into network graphs and thinking about how memories are 
   import NetworkGraph from '/assets/js/network.js';
   
   const data = {
-    nodes: [
-      { id: "Home", url: "/" },
-      { id: "Blog", url: "/blog" },
-      { id: "Projects", url: "/projects" },
-      { id: "Notes", url: "/notes" },
-      { id: "About", url: "/about" }
-    ],
-    links: [
-      { source: "Home", target: "Blog" },
-      { source: "Home", target: "Projects" },
-      { source: "Home", target: "Notes" },
-      { source: "Home", target: "About" }
-    ]
+      nodes: [
+      { id: "home", url: "/", title: "Home" },
+      { id: "blog", url: "/blog", title: "Blog" },
+      { id: "projects", url: "/projects", title: "Projects" },
+      { id: "notes", url: "/notes", title: "Notes" },
+      { id: "about", url: "/about", title: "About"},
+      { id: "search", url: "/search", title: "Search"}
+      ],
+      links: [
+      { source: "home", target: "blog" },
+      { source: "home", target: "projects" },
+      { source: "home", target: "notes" },
+      { source: "home", target: "about" },
+      { source: "home", target: "search" }
+      ]
   };
   
   const networkGraph = new NetworkGraph(data, "network-graph");

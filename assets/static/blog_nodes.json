@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "blog",
+      "url": "/blog/",
+      "title": "Blog"
+    },
+    {
+      "id": "2024-02-11-2024-courseload",
+      "url": "/blog/2024-02-11-2024-Courseload",
+      "title": "2024 Courseload"
+    },
+    {
+      "id": "2024-02-26-sail-torch-1",
+      "url": "/blog/2024-02-26-sail-torch-1",
+      "title": "Training a neural network to poorly predict sailboat prices..."
+    }
+  ],
+  "links": [
+    {
+      "source": "blog",
+      "target": "2024-02-11-2024-courseload"
+    },
+    {
+      "source": "blog",
+      "target": "2024-02-26-sail-torch-1"
+    }
+  ]
+}

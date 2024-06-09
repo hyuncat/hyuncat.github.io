@@ -1,0 +1,57 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.inter-node {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 330;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+
+.text {
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+}
+
+text {
+    /* font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; */
+    font-family: "Inter", sans-serif;
+}
+
+.network-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* Adjust this value based on the aspect ratio you want */
+    vertical-align: top;
+    overflow: hidden;
+}
+
+#network-graph {
+    display: inline-block;
+    width: 100%;
+    height: 80vh;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    width: auto;
+    height: auto;
+    padding: 8px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    border-radius: 4px;
+    pointer-events: none; /* Let mouse events pass through */
+    visibility: hidden; /* Hidden by default */
+    z-index: 10;
+}

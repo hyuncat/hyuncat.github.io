@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "notes",
+      "url": "/notes/",
+      "title": "Notes"
+    },
+    {
+      "id": "tkinter",
+      "url": "/notes/tkinter",
+      "title": "Tkinter"
+    },
+    {
+      "id": "vim",
+      "url": "/notes/vim",
+      "title": "Vim"
+    }
+  ],
+  "links": [
+    {
+      "source": "notes",
+      "target": "tkinter"
+    },
+    {
+      "source": "notes",
+      "target": "vim"
+    }
+  ]
+}

@@ -17,6 +17,7 @@ const data = {
 class NetworkGraph {
   constructor(data, containerId) {
     this.data = data;
+    this.containerId = containerId
     this.container = document.getElementById(containerId);
     this.width = this.container.clientWidth;  // Get the width of the container
     this.height = this.container.clientHeight; // Get the height of the container
@@ -31,32 +32,48 @@ class NetworkGraph {
     this.textColor = "#2C3B4E";
     this.textHoverColor = "#FFFFFF";
     this.textSize = "0.6em";
+    this.maxFontSize = 12; 
+    this.minFontSize = 8;  
 
     // Link variables
     this.linkColor = "#91B6E2";
     this.linkWidth = 2;
 
+    // Simulation force variables
+    this.linkDistance = 200;
+    this.chargeStrength = -2000;
+    this.centerStrength = 0.6;
+
+
     this.initGraph();
   }
 
   initGraph() {
-    this.svg = d3.select("#network-graph").append("svg")
+    
+    this.zoom = d3.zoom()
+    .scaleExtent([0.5, 4])
+    .on("zoom", event => {
+      this.container.attr("transform", event.transform);  // Apply the zoom transformation directly
+    });
+    
+    // Svg stuff
+    this.svg = d3.select(this.container).append("svg")
       .attr("width", this.width)
-      .attr("height", this.height);
+      .attr("height", this.height)
+      .call(this.zoom);
 
     this.container = this.svg.append("g")
       .attr("class", "everything");
 
-    this.svg.call(d3.zoom().scaleExtent([0.5, 4]).on("zoom", (event) => {
-      this.container.attr("transform", event.transform);
-    }));
 
+    // Link
     this.link = this.container.selectAll("line")
       .data(this.data.links)
       .enter()
       .append("line")
       .style("stroke", this.linkColor);
 
+    // Node
     this.node = this.container.selectAll(".node")
       .data(this.data.nodes)
       .enter().append("g")
@@ -76,19 +93,21 @@ class NetworkGraph {
     this.node.append("text")
       .attr("dy", ".35em")
       .attr("text-anchor", "middle")
-      .text(d => d.id)
+      .text(d => d.title.length > 8 ? `${d.title.substring(0, 7)}...` : d.title) // Truncate long titles
       .style("fill", this.textColor)
-      .style("font-size", this.textSize);;
+      .style("font-size", d => `${this.calculateFontSize(this.nodeRadius)}px`);
 
+    // Simulations
     this.simulation = d3.forceSimulation(this.data.nodes)
-      .force("link", d3.forceLink(this.data.links).id(d => d.id).distance(200))
+      .force("link", d3.forceLink(this.data.links).id(d => d.id).distance(this.linkDistance))
       .force("charge", d3.forceManyBody()
-        .strength(-300)
-        .distanceMin(150)
-        .distanceMax(350)
+        .strength(this.chargeStrength)
+        // .distanceMin(150)
+        // .distanceMax(350)
       )
       .force("center", d3.forceCenter(this.width / 2, this.height / 2))
-      .force("collide", d3.forceCollide().radius(this.nodeRadius).iterations(3))
+        // .strength(this.centerStrength)
+      .force("collide", d3.forceCollide().radius(d => d.radius).iterations(3))
 
     this.simulation
       .nodes(this.data.nodes)
@@ -97,10 +116,20 @@ class NetworkGraph {
     this.simulation.force("link")
       .links(this.data.links);
 
+    this.tooltip = d3.select("body").append("div")
+      .attr("class", "tooltip");
+
+    // Listen for resizing
     window.addEventListener('resize', () => this.resize());
   }
 
+  // Interactive node events
   handleMouseOver(event, d) {
+    this.tooltip.html(`${d.title}`)
+      .style("visibility", "visible")
+      .style("left", (event.pageX + 10) + "px") // Offset by 10px from cursor
+      .style("top", (event.pageY - 10) + "px"); // Offset by 10px from cursor
+
     d3.select(event.currentTarget).select("circle")
       .style('fill', this.nodeHoverColor)
       .attr("r", this.nodeHoverRadius);
@@ -108,6 +137,8 @@ class NetworkGraph {
       .style("fill", this.textHoverColor);
   }
   handleMouseOut(event, d) {
+    this.tooltip.style("visibility", "hidden");
+
     d3.select(event.currentTarget).select("circle")
       .style('fill', this.nodeColor)
       .attr("r", this.nodeRadius);
@@ -118,6 +149,7 @@ class NetworkGraph {
     window.location.href = d.url;
   }
 
+  // Dragging events
   dragstarted(event) {
     if (!event.active) this.simulation.alphaTarget(0.3).restart();
     event.subject.fx = event.subject.x;
@@ -133,6 +165,7 @@ class NetworkGraph {
     event.subject.fy = null;
   }
 
+  // Simulation ticks
   ticked() {
     this.link
       .attr("x1", d => d.source.x)
@@ -144,26 +177,31 @@ class NetworkGraph {
       .attr("transform", d => `translate(${d.x},${d.y})`);
   }
 
+  // Resize
   resize() {
-    // Update dimensions based on the container's current size
-    this.container = document.getElementById("network-graph");
     this.width = this.container.clientWidth;
     this.height = this.container.clientHeight;
-
-    // Apply the new dimensions to the SVG element
+  
     this.svg.attr('width', this.width)
             .attr('height', this.height);
-
-    // Update the center force to the new dimensions
+  
+    // Recalculate forces based on new dimensions
     this.simulation.force("center", d3.forceCenter(this.width / 2, this.height / 2));
+    this.simulation.alpha(1).restart();
+  
+    // If using transform rescaling
+    const transform = d3.zoomTransform(this.svg.node());
+    this.svg.call(this.zoom.transform, transform);
+  }
 
-    // Restart the simulation with the new settings
-    this.simulation.alpha(1).restart();  // Reheats the simulation necessary for the layout to adjust
+  calculateFontSizeOld(radius) {
+    let size = Math.min(this.maxFontSize, radius/2);
+    return Math.max(this.minFontSize, size);
+  }
 
-    this.svg.on(".zoom", null); // Remove previous zoom handlers if necessary
-    this.svg.call(d3.zoom().scaleExtent([0.5, 4]).on("zoom", (event) => {
-        this.container.attr("transform", event.transform);
-    }));
+  calculateFontSize(radius) {
+    let size = Math.min(this.maxFontSize, radius/2);
+    return size;
   }
 }
 
