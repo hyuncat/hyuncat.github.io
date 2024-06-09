@@ -6,6 +6,11 @@
       "title": "Notes"
     },
     {
+      "id": "cpp-classes",
+      "url": "/notes/cpp-classes",
+      "title": "C++ Classes"
+    },
+    {
       "id": "tkinter",
       "url": "/notes/tkinter",
       "title": "Tkinter"
@@ -17,6 +22,10 @@
     }
   ],
   "links": [
+    {
+      "source": "notes",
+      "target": "cpp-classes"
+    },
     {
       "source": "notes",
       "target": "tkinter"

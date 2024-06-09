@@ -281,23 +281,24 @@ collections:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
-      layout: single
+      layout: posts
       author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
       show_date: true
+      permalink: /blog/:title
 
   # _notes
   - scope:
-      path: "notes/:path/"
+      path: "_notes"
       type: notes
     values:
-      layout: single
+      layout: notes
       author_profile: true
       read_time: true
       comments: true

@@ -5,6 +5,8 @@ const yaml = require('js-yaml');
 // Base directory for notes and posts
 const basePath = path.join(__dirname, '../../');
 
+
+
 // Function to read a directory and generate a graph
 function readDirectory(directoryPath, targetNodeId) {
   const data = {
@@ -17,15 +19,15 @@ function readDirectory(directoryPath, targetNodeId) {
   data.nodes.push({ id: targetNodeId.toLowerCase(), url: `/${targetNodeId}/`, title: targetNodeTitle });
 //   data.links.push({ source: "home", target: targetNodeId.toLowerCase() });
 
-  fs.readdir(directoryPath, { withFileTypes: true }, (err, entries) => {
+  fs.readdir(directoryPath, { withFileTypes: true }, (err, files) => {
     if (err) {
       console.error("Error reading directory", err);
       return;
     }
 
-    entries.forEach(entry => {
-      if (entry.isFile() && entry.name.endsWith('.md')) {
-        const filePath = path.join(directoryPath, entry.name);
+    files.forEach(file => {
+      if (file.isFile() && file.name.endsWith('.md')) {
+        const filePath = path.join(directoryPath, file.name);
         fs.readFile(filePath, 'utf8', (err, content) => {
           if (err) {
             console.error("Error reading file", err);
@@ -36,8 +38,16 @@ function readDirectory(directoryPath, targetNodeId) {
             const frontMatter = yaml.load(match[1]);
             const title = frontMatter.title || 'Untitled';
 
-            const id = path.parse(entry.name).name.toLowerCase();
-            const url = `/${targetNodeId.toLowerCase()}/${entry.name.replace(/\.md$/, '')}`;
+            const id = path.parse(file.name).name.toLowerCase();
+            let url;
+            if (targetNodeId.toLowerCase() === 'blog') {
+              // Parse the URL one way for blog posts
+              const fileNameWithoutExtension = file.name.replace(/\.md$/, '');
+              url = `/${targetNodeId.toLowerCase()}/${fileNameWithoutExtension.split('-').slice(3).join('-')}`;
+            } else {
+              // Parse the URL another way for other files
+              url = `/${targetNodeId.toLowerCase()}/${file.name.replace(/\.md$/, '')}`;
+            }
 
             data.nodes.push({ id, url, title });
             data.links.push({ source: targetNodeId.toLowerCase(), target: id });

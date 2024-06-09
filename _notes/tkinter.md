@@ -1,7 +1,7 @@
 ---
 title: "Tkinter"
-layout: single
 collection: notes
+layout: single
 tags:
     - python
     - tkinter
