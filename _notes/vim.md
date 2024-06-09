@@ -1,13 +1,11 @@
 ---
-title: A short guide to Vim
-categories:
-    - guides
+title: "Vim"
+layout: single
+collection: notes
 tags:
     - vim
 ---
-A noncomprehensive guide to Vim that got me through AP.
-
-Despite the initial learning curve spent clunking around my keyboard, learning Vim has been one of the best optimizations in my coding journey. Thanks Jae :-)
+A noncomprehensive compilation of my most frequently used commands in Vim.
 
 Cursor Movement
 ---

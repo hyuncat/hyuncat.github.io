@@ -1,8 +1,9 @@
 ---
-title: "Guides"
+title: "Notes"
 layout: collection
-permalink: /categories/guides/
-collection: guides
+permalink: /notes/
+collection: notes
+entries_layout: list
 author_profile: false
 ---
 
