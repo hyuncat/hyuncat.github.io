@@ -2,6 +2,7 @@
 title: "C++ Classes"
 collection: notes
 layout: single
+toc: true
 tags:
     - C++
     - OOP

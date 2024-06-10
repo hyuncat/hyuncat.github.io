@@ -2,6 +2,7 @@
 title: "Vim"
 layout: single
 collection: notes
+toc: true
 tags:
     - vim
 ---

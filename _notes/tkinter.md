@@ -2,6 +2,7 @@
 title: "Tkinter"
 collection: notes
 layout: single
+toc: true
 tags:
     - python
     - tkinter

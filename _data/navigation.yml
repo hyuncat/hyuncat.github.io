@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Graph"
+    url: /graph/
   - title: "Blog"
     url: /blog/
   - title: "Notes"

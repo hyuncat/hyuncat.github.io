@@ -44,6 +44,8 @@ class NetworkGraph {
     this.chargeStrength = -2000;
     this.centerStrength = 0.6;
 
+    this.ticks = 0; // running total ticks (for graph resizing)
+
 
     this.initGraph();
   }
@@ -97,6 +99,8 @@ class NetworkGraph {
       .style("fill", this.textColor)
       .style("font-size", d => `${this.calculateFontSize(this.nodeRadius)}px`);
 
+    
+    
     // Simulations
     this.simulation = d3.forceSimulation(this.data.nodes)
       .force("link", d3.forceLink(this.data.links).id(d => d.id).distance(this.linkDistance))
@@ -112,6 +116,10 @@ class NetworkGraph {
     this.simulation
       .nodes(this.data.nodes)
       .on("tick", () => this.ticked());
+      // .on("end", () => this.fitGraphToScreen());
+
+    // Call fitGraphToScreen after a delay to allow initial layout
+    setTimeout(() => this.fitGraphToScreen(), 100);
 
     this.simulation.force("link")
       .links(this.data.links);
@@ -203,6 +211,33 @@ class NetworkGraph {
     let size = Math.min(this.maxFontSize, radius/2);
     return size;
   }
+
+  // Make all nodes fit in the graph at once
+  fitGraphToScreen() {
+    const bounds = this.calculateBounds(); // Calculate the boundaries of nodes
+    const dx = bounds.xMax - bounds.xMin;
+    const dy = bounds.yMax - bounds.yMin;
+    const x = (bounds.xMax + bounds.xMin) / 2;
+    const y = (bounds.yMax + bounds.yMin) / 2;
+    const scale = 0.8 / Math.max(dx / this.width, dy / this.height); // Scale to fit the graph with a little padding
+    const translate = [this.width / 2 - scale * x, this.height / 2 - scale * y];
+  
+    this.svg.transition()
+      .duration(750) // Smooth transition
+      .call(this.zoom.transform, d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale));
+  }
+  
+  calculateBounds() {
+    let xMin = Infinity, xMax = -Infinity, yMin = Infinity, yMax = -Infinity;
+    this.data.nodes.forEach(node => {
+      if (node.x < xMin) xMin = node.x;
+      if (node.x > xMax) xMax = node.x;
+      if (node.y < yMin) yMin = node.y;
+      if (node.y > yMax) yMax = node.y;
+    });
+    return { xMin, xMax, yMin, yMax };
+  }
+  
 }
 
 export default NetworkGraph;

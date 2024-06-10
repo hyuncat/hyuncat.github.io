@@ -104,6 +104,14 @@ class ProjectVisualizer {
 
         // Add hover and click event listeners
         this.addHoverAndClickEvents();
+
+        // Adjust the canvas size when the window is resized
+        window.addEventListener('resize', () => {
+            render.canvas.width = this.container.offsetWidth;
+            render.canvas.height = this.container.offsetHeight;
+            render.options.width = this.container.offsetWidth;
+            render.options.height = this.container.offsetHeight;
+        });
     }
 
     setupMouseConstraint() {

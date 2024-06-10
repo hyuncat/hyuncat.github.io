@@ -1,9 +1,25 @@
 ---
 title: "Projects"
-layout: single
+layout: default
 permalink: /projects/
 ---
-<div id="p5-canvas" style="width: 100%; height: 60vh;"></div>
+<style>
+    /* body {
+        margin: 30px;
+        padding: 0;
+        width: 100;
+        text-align: center;
+    } */
+    #p5-canvas {
+        display: block;
+        margin-top: 40px;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        height: 80vh;
+    }
+</style>
+<div id="p5-canvas"></div>
 <div id="tooltip" style="display: none; position: absolute; background: rgba(0, 0, 0, 0.7); color: white; padding: 10px; border-radius: 5px;"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
