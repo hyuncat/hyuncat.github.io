@@ -18,7 +18,12 @@ permalink: /projects/
         width: 90%;
         height: 80vh;
     }
+    /* .heading {
+        margin-top: 20px;
+        margin-left: 20px;
+    } */
 </style>
+
 <div id="p5-canvas"></div>
 <div id="tooltip" style="display: none; position: absolute; background: rgba(0, 0, 0, 0.7); color: white; padding: 10px; border-radius: 5px;"></div>
 

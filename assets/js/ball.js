@@ -33,6 +33,10 @@ class DraggableBall {
         });
         Matter.World.add(this.world, this.ground);
 
+        // Create a mouse
+        let mouse = Matter.Mouse.create(sketch.canvas.elt);
+        mouse.pixelRatio = sketch.pixelDensity(); 
+
         this.mConstraint = Matter.MouseConstraint.create(this.engine, {
             mouse: Matter.Mouse.create(sketch.canvas.elt),
             constraint: {
@@ -53,6 +57,4 @@ class DraggableBall {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    new DraggableBall('p5-canvas');
-});
+export default DraggableBall;

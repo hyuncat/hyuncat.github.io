@@ -308,3 +308,5 @@ defaults:
 # Search
 search:
   type: lunr
+
+search: true

@@ -23,7 +23,9 @@ I'm spending this summer working on 4 distinct projects!
 Outside of coding, I love music! I play violin in the Columbia University Orchestra and am involved in chamber music. I also like drawing and playing tennis in my free time.
 
 ### Hate navbars?
-Lately I've been really into network graphs and thinking about how memories are formed and strengthened in proportion to how well connected it is to the rest of your memory nodes. I made this small graph using D3.js incase you wanted to explore my website a-la graph traversal.
+Maybe it's because I'm recently transferred all my notes from Notion to Obsidian, but I've lately been really into network graphs and reframing my mind to think about everything in terms of them. 
+
+In that spirit, I wanted to make this website traversable purely by network graph. It's stil a work-in-progress, but I've left small boxes here and there incase you wanted to explore my website a-la graph traversal.
 
 <div id="network-graph"></div>
 <script src="https://d3js.org/d3.v6.min.js"></script>
@@ -50,6 +52,8 @@ Lately I've been really into network graphs and thinking about how memories are 
   
   const networkGraph = new NetworkGraph(data, "network-graph");
 </script>
+
+You can explore the full graph-tree of this website [here](/graph).
 
 ### Contact me:
 Feel free to reach out at ssh2198@columbia.edu! I'm always happy to create and work on new stuff.

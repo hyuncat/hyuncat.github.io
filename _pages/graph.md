@@ -18,11 +18,11 @@ permalink: /graph/
     
     const data = {
         nodes: [
-        { id: "home", url: "/", title: "Home" },
+        { id: "home", url: "/graph", title: "Home" },
         { id: "blog", url: "/blog", title: "Blog" },
         { id: "projects", url: "/projects", title: "Projects" },
         { id: "notes", url: "/notes", title: "Notes" },
-        { id: "about", url: "/about", title: "About"},
+        { id: "about", url: "/", title: "About"},
         { id: "search", url: "/search", title: "Search"},
         {
             "id": "cpp-classes",
