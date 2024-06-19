@@ -58,6 +58,18 @@ permalink: /projects/
         title: 'daily-integral', 
         info: 'Yay math', 
         url: 'https://github.com/hyuncat/daily-integral' 
+    },
+    { 
+        imgPath: '/assets/images/projects/walkwise.png', 
+        title: 'Walkwise', 
+        info: 'For caspar', 
+        url: 'https://github.com/hyuncat/GPS-kalman' 
+    },
+    { 
+        imgPath: '/assets/images/projects/violin-cv.png', 
+        title: 'violin-cv', 
+        info: 'Love violin', 
+        url: 'https://github.com/hyuncat/violin-cv' 
     }
     ];
 
