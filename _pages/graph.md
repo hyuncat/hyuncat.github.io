@@ -24,8 +24,7 @@ permalink: /graph/
         { id: "notes", url: "/notes", title: "Notes" },
         { id: "about", url: "/", title: "About"},
         { id: "search", url: "/search", title: "Search"},
-        {
-            "id": "cpp-classes",
+        { "id": "cpp-classes",
             "url": "/notes/cpp-classes",
             "title": "C++ Classes"
         },
@@ -38,6 +37,11 @@ permalink: /graph/
             "id": "vim",
             "url": "/notes/vim",
             "title": "Vim"
+        },
+        {
+            "id": "tools",
+            "url": "/notes/tools",
+            "title": "Tools"
         },
         {
             "id": "2024-02-11-2024-courseload",
@@ -63,6 +67,10 @@ permalink: /graph/
         {
             "source": "notes",
             "target": "tkinter"
+        },
+        {
+            "source": "notes",
+            "target": "tools"
         },
         {
             "source": "notes",

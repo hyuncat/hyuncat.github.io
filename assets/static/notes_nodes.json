@@ -11,14 +11,19 @@
       "title": "C++ Classes"
     },
     {
-      "id": "tkinter",
-      "url": "/notes/tkinter",
-      "title": "Tkinter"
+      "id": "tools",
+      "url": "/notes/tools",
+      "title": "Tools"
     },
     {
       "id": "vim",
       "url": "/notes/vim",
       "title": "Vim"
+    },
+    {
+      "id": "tkinter",
+      "url": "/notes/tkinter",
+      "title": "Tkinter"
     }
   ],
   "links": [
@@ -28,11 +33,15 @@
     },
     {
       "source": "notes",
-      "target": "tkinter"
+      "target": "tools"
     },
     {
       "source": "notes",
       "target": "vim"
+    },
+    {
+      "source": "notes",
+      "target": "tkinter"
     }
   ]
 }

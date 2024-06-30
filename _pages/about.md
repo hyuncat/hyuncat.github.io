@@ -14,16 +14,16 @@ I'm Sarah, I'm a 2nd year undergraduate at Columbia University majoring in compu
 ### 🌱 Currently:
 I'm spending this summer working on 4 distinct projects!
 
-1. **RichStudio (UND Hur Lab)** - A web-based application which implements a novel biological pathway clustering algorithm based on gene-level similarity. Hoping to release it as a package and write a publication by the end of summer! Under supervision of Dr. Junguk Hur at UND.
-2. **DNA-origami (Columbia Gang Lab)** - Developing algorithms and programmatic interfaces for finding optimal # of unique voxels and DNA bindings to create a desired nanoparticle unit lattice. Under supervision of Dr. Oleg Gang at Columbia University.
+1. **RichCluster (UND Hur Lab)** - A customizable C++ algorithm for clustering biological terms based on gene content, with supporting visualization functions. Under supervision of Dr. Junguk Hur at UND.
+2. **Coloring Algorithm (Columbia Gang Lab)** - An algorithm for finding the optimal # of unique voxel + DNA bonds to create a desired nanoparticle unit lattice. Under supervision of Dr. Oleg Gang at Columbia University.
 3. **Walkwise** - Helping train and optimize a transformer model for predicting pedestrian movement at intersections: Kalman filtering, data pipelining, and model training. Under supervision of PhD. student Caspar Lant.
-4. **Violin-CV** - An independent project trying to analyze violin technique by synthesizing audio processing, transformer architecture, and computer vision techniques. Under supervision of NYU Professor Dennis Shasha.
+4. **Violin-CV** - An independent project trying to analyze violin performance with dynamic time warping and music processing techniques. Under supervision of the kind NYU professor Dennis Shasha.
 
 ### Other interests:
 Outside of coding, I love music! I play violin in the Columbia University Orchestra and am involved in chamber music. I also like drawing and playing tennis in my free time.
 
 ### Hate navbars?
-Maybe it's because I'm recently transferred all my notes from Notion to Obsidian, but I've lately been really into network graphs and reframing my mind to think about everything in terms of them. 
+Maybe it's because I'm recently transferred all my notes from Notion to Obsidian (check out my [current Obsidian graph](/notes/tools)), but I've lately been really into network graphs and reframing my mind to think about everything in terms of them. 
 
 In that spirit, I wanted to make this website traversable purely by network graph. It's stil a work-in-progress, but I've left small boxes here and there incase you wanted to explore my website a-la graph traversal.
 
