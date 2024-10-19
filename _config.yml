@@ -276,6 +276,13 @@ collections:
   notes:
     output: true
     permalink: /notes/:path/
+    subcollections:
+      analysis:
+        output: true
+        permalink: /notes/analysis/:path/
+      fundies:
+        output: true
+        permalink: /notes/fundies/:path/
 
 # Defaults
 defaults:
