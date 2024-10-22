@@ -5,7 +5,6 @@ collection: notes
 subcollection: analysis
 permalink: /notes/analysis/real-ordered-field/
 grouped_by: analysis
-use_math: true
 ---
 ## Real numbers
 The set of **real numbers** <span>$\mathbb{R}$</span> is an **ordered field**, meaning it's defined as being a "tuple" of four elements, which includes
