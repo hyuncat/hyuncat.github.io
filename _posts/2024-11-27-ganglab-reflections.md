@@ -1,7 +1,7 @@
 ---
 title: Ganglab reflections
 layout: single
-date: 2024-11-27
+date: 2024-12-3
 ---
 ## The end
 **12/3/24, 3:32am** - A manuscript titled Arbitrary Design of DNA-Programmable 3D Crystals through Symmetry Mapping (nn-2024-17408d) has been submitted by Dr. Oleg Gang to ACS Nano.
