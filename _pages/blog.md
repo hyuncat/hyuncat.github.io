@@ -4,11 +4,11 @@ permalink: /blog/
 layout: posts
 author_profile: false
 ---
-{% include inline-network.html %}
+<!-- {% include inline-network.html %} -->
 
-Blog posts, self-contained reflections.
+Here you can find all my blog posts. I write about math, CS, and research.
 
-<div id="network-graph"></div>
+<!-- <div id="network-graph"></div>
 
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script src="/assets/js/network.js"></script>
@@ -20,4 +20,4 @@ Blog posts, self-contained reflections.
     .then(data => {
       const networkGraph = new NetworkGraph(data, 'network-graph');
     });
-</script>
+</script> -->

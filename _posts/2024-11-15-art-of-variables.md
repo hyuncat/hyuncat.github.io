@@ -2,12 +2,16 @@
 title: The art of naming variables
 layout: single
 date: 2024-11-15
+tags:
+    - ganglab
+    - research
+    - problem-solving
 ---
 
 ## The helix problem
 Just as I thought I had finally debugged all of the edge cases of the algorithm, last week I went into the lab and was asked to try out the algorithm on this helix design.
 
-<img src="/assets/images/blog/Screenshot 2024-12-04 at 1.12.08 AM.png" alt="Real numbers" width="300"/>
+<img src="/assets/images/blog/2024-11-15-art-of-variables/Screenshot 2024-12-04 at 1.12.08 AM.png" alt="Real numbers" width="300"/>
 
 Where we can see the a voxel with the neon particle inside of it is spiraling around each layer like a helix, surrounded by empty voxels.
 
@@ -37,7 +41,7 @@ This kind of larger scale thinking - of how a class or feature should be added w
 
 To be honest though, creating quality groupings is so important. When I have a good name - for example, earlier in the summer, I created this organizational structure for the symmetry operations in the algorithm. 
 
-<img src="/assets/images/blog/IMG_13081516F53D-1.jpeg" alt="Real numbers" width="350"/>
+<img src="/assets/images/blog/2024-11-15-art-of-variables/IMG_13081516F53D-1.jpeg" alt="Real numbers" width="500"/>
 
 So we compute all 37 rotational symmetries for each 2-combination of voxels in the lattice, and store it in a pandas dataframe called symmetry_df. But then if we compute it this way, then each standalone row can be a 'symlist' where we input a voxel pair and we get the list of all valid symmetries satisfied between the two voxels. And then we don't have to recompute the numpy transformations again each time, but rather we can just index a dataframe for quick access.
 
@@ -66,8 +70,8 @@ For instance, in the newest iteration of the algorithm, I had written out this h
 
 ---
 
-## algorithm flow
-### structural bond painting phase
+## Algorithm flow
+### Structural bond painting phase
 ```
 1. find structural voxels
 	1. (make all the structural voxels touch each other)
@@ -76,7 +80,7 @@ For instance, in the newest iteration of the algorithm, I had written out this h
 	1. paint_self_sym(voxel)
 ```
 
-### complementary bond painting phase
+### Complementary bond painting phase
 ```
 while there are unpainted vertices in structural_voxels
 1. find an unpainted vertex --> str_voxel + partner_voxel
@@ -98,7 +102,7 @@ while there are unpainted vertices in structural_voxels
 		4. map(partner_voxel -> str_voxel)
 ```
 
-**output:** a `mesovoxel` which should be able to map onto the rest of the lattice
+**Output:** a `mesovoxel` which should be able to map onto the rest of the lattice
 
 ---
 

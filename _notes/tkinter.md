@@ -7,7 +7,7 @@ tags:
     - python
     - tkinter
 ---
-Learned tkinter so I could make a lattice design GUI for Gang Lab.
+I started learning the tkinter framework so I could make a lattice designer GUI for Gang Lab.
 
 Notes taken from article: ([Link](https://python-textbok.readthedocs.io/en/1.0/Introduction_to_GUI_Programming.html#putting-it-all-together))
 

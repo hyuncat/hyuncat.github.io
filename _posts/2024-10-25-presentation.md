@@ -2,6 +2,10 @@
 title: Presentations; Group problem solving
 layout: single
 date: 2024-10-25
+tags:
+  - ganglab
+  - research
+  - communication
 ---
 ## Group meetings: Overview
 Every Friday, Gang lab holds a group meeting from 10am-12pm where 1-2 lab members present on the progress they've made on their projects. The presentations generally include a lot of experimental results and microscope images of the DNA origami crystals. 
@@ -10,7 +14,7 @@ My labmates are some of the most down-to-earth, yet secretly cracked people ever
 
 One memorable such moment was when Elad concluded his presentation with some potential notebook designs to give to the lab. When we asked him what the middle notebook was, he said that it was clearly, "DNA superlattices falling on Manhattan."
 
-<img src="/assets/images/blog/dna_manhattan.jpg" alt="Real numbers" width="400"/>
+<img src="/assets/images/blog/2024-10-25-presentation/dna_manhattan.jpg" alt="Real numbers" width="400"/>
 
 We are unfortunately only imagining what they would look like since we ran into some issues with the printing company.
 
@@ -30,7 +34,7 @@ I completed the bulk of the presentation the night before—apparently, a rite o
 ### Who am I?
 I began my presentation with a "Who am I" slide.
 
-<img src="/assets/images/blog/Screenshot 2024-12-06 at 7.52.21 PM.png" alt="Real numbers" width="400"/>
+<img src="/assets/images/blog/2024-10-25-presentation/Screenshot 2024-12-06 at 7.52.21 PM.png" alt="Real numbers" width="400"/>
 
 (Not a very pretty slide 💀 - if I had time, I would've added a picture of either me, Jason, or both.)
 
@@ -64,13 +68,13 @@ And then I would go on to explain how the lattice itself is encoded in the code,
 ### Starting from the example
 However, I was surprised when in the end, I ended up spending 60% of the presentation on one slide - at the very end, containing a single example picture:
 
-<img src="/assets/images/blog/Screenshot 2024-12-06 at 8.03.35 PM.png" alt="Real numbers" width="150"/>
+<img src="/assets/images/blog/2024-10-25-presentation/Screenshot 2024-12-06 at 8.03.35 PM.png" alt="Real numbers" width="150"/>
 
 As I started presenting, I realized I needed a way to explain what a "Voxel" and a "Bond" in a way that everyone could understand. And to explain how the mapping actually worked. So I jumped to like my third-to-last slide (at the time) which contained the above example.
 
 Instead of having the user walk through a slide like this (my original slide):
 
-<img src="/assets/images/blog/Screenshot 2024-12-06 at 8.08.05 PM.png" alt="Real numbers" width="400"/>
+<img src="/assets/images/blog/2024-10-25-presentation/Screenshot 2024-12-06 at 8.08.05 PM.png" alt="Real numbers" width="400"/>
 
 I found that just using the example slide and pointing - "this is a voxel", "this is a bond"," this is the lattice", "this is the minimum copy-pastable design" - that was way more effective than trying to explain it in this kind of isolated slide.
 

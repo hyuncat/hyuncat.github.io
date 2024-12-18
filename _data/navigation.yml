@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "Graph"
-    url: /graph/
+  # - title: "Graph"
+  #   url: /graph/
   - title: "Blog"
     url: /blog/
-  - title: "Notes"
-    url: /notes/
+  # - title: "Notes"
+  #   url: /notes/
   - title: "Projects"
     url: /projects/
   # - title: "Quick-Start Guide"

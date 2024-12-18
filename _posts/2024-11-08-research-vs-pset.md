@@ -2,6 +2,10 @@
 title: Research, ego, and PSETs
 layout: single
 date: 2024-11-08
+tags:
+    - ganglab
+    - research
+    - problem-solving
 ---
 ## The perovskite problem
 Last I had a meeting with Jason debugging the coloring algorithm - where I realized that the colortree post-processing script may not be necessary at all.
