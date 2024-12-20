@@ -58,7 +58,7 @@ $$
 We can reuse the same limit notation and describe the sequence of partial sums instead, and say that the series $\sum a_n$ converges if the sequence of partial sums $\{s_0, s_1, \cdots s_n\}$ converges to some $S$ as $n \rightarrow \infty$. Hence, all the partial sums beyond a certain point $N \in \mathbb{N}$ are within $\varepsilon$-distance from $S$. 
 
 ### Absolute / conditional convergence
-However, a sequence can still 'converge' even though it doesn't look like the area approaches 0.
+However, a series can still 'converge' even though it doesn't look like the area approaches 0.
 
 <img src="/assets/images/blog/2024-12-16-seq-series/IMG_7CC0347FE0AD-1.jpeg" alt="Real numbers" width="300"/>
 

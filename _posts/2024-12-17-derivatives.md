@@ -9,7 +9,8 @@ tags:
 
 Finally - differentiation!!
 
-Now that we know about sets, compactness, sequences, series, convergence, and continuity, it's finally time to talk about differentiation! This is where Analysis started unpacking further the calculus concepts I had learned about previously.
+Using our epsilon-delta definition of limits / continuity, we finally have the tools to unpack rigorously the iconic limit definition of differentiation.
+This blog post will break down how we define the derivative, the different rules + ideas for how to prove them, and talk the Rolles -> MVT -> generalized MVT pipeline.
 
 ## The derivative
 The derivative describes the instantaneous slope / rate of change of the function at the given time.

@@ -7,7 +7,7 @@ tags:
     - modern-analysis
 ---
 
-Darboux integration, alongside differentiation, is the second cornerstone application of all the previous Analysis techniques we learned. I'll break it down to its essence in this blog post. It's pretty cool, building on our previous limit definitions, and goes back to the idea of approximating the area under a curve with a bunch of rectangles.
+Darboux integration (or Riemann integration) is similar to what we learned in Calc. In Analysis, we broke down how the integral sign is composed of these series (Darboux sums), which goes back to the idea of approximating the area under a curve with a bunch of rectangles.
 
 <img src="/assets/images/blog/2024-12-18-integration/IMG_F87E65C66954-1.jpeg" alt="Real numbers" width="600"/>
 

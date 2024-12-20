@@ -49,7 +49,7 @@ There are two definitions - I learned the topological definition first but hones
 <img src="/assets/images/blog/2024-12-16-balls-and-sets/IMG_6E6371DD0781-1.jpeg" alt="Real numbers" width="300"/>
 
 Which okay, it's trying to say that if you can find some point that A approaches with super close epsilon distance, and that point is not contained in A, then the set is not closed. 
-- Ex: So the open interval $A=[0, 1] \in \mathbb{R}$ is not closed because $0$ and $1$ are both limit points of $[0,1]$ which are not contained in $A$. Since, at the boundaries you can always find some epsilon ball super close to $0$ or $1$ that contains a point in $A$ but $0$ and $1$ are not contained within $A$ itself. 
+- Ex: So the open interval $A=(0, 1) \in \mathbb{R}$ is not closed because $0$ and $1$ are both limit points of $(0,1)$ which are not contained in $A$. Since, at the boundaries you can always find some epsilon ball super close to $0$ or $1$ that contains a point in $A$ but $0$ and $1$ are not contained within $A$ itself. 
 
 However, for me this definition only started making sense once I learned this alternate definition using sequences.
 
