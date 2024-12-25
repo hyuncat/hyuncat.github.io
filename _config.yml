@@ -226,6 +226,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-tagging
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -264,7 +265,6 @@ jekyll-archives:
     category: /categories/:name/
     tag: /tags/:name/
 
-
 # HTML Compression
 # - https://jch.penibelst.de/
 compress_html:
@@ -300,6 +300,7 @@ defaults:
       related: true
       show_date: true
       permalink: /blog/:title
+      search: true
 
   # _notes
   - scope:
@@ -314,7 +315,7 @@ defaults:
       related: true
 
 # Search
-search:
-  type: lunr
 
 search: true
+search_provider: lunr
+search_full_content: true
