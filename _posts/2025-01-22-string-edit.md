@@ -27,7 +27,7 @@ The 4 operations which can help us transform the strings into each other are as 
 Where each operation is defined through what the user did to turn the `goal_string` into their own `user_string`. 
 - So the operation acts on the `goal_string` and turns it into the `user_string`.
 
-Now given our toolbox of operations, the goal of string editing is to find the minimum number of these operations to transform any user_string into a desired goal_string.
+Now given our toolbox of operations, the goal of string editing is to find the minimum number of these operations to transform any goal_string into the user_string. We can think of the 4 operations by considering them in terms of "what needs to happen to the goal string to turn it into what the user actually wrote?" Which reveals the roots of this string edit algorithm in NLP.
 
 How do we do this?
 ### The cost matrix
@@ -36,8 +36,6 @@ Let's step back and create a matrix and placing the letters of each string on th
 <img src="/assets/images/blog/2025-01-22-string-edit/IMG_9101.jpg" alt="Real numbers" width="500"/>
 
 (Ignore the already filled in cells for now)
-
-(+ Sorry the picture quality suddenly became much shittier, I started handwriting my notes.)
 
 ### What goes in the matrix cells?
 Each matrix cell corresponds to the minimum **cost** of finding a string defined by the strings-so-far which correspond to the cell.
