@@ -1,5 +1,5 @@
 ---
-title: "Metric spaces"
+title: "An foray into metric and vector spaces"
 layout: single
 date: 2024-10-22
 tags:
@@ -14,21 +14,19 @@ So, the metric space is a set of elements (usually called "points") which have a
 
 <img src="/assets/images/blog/2024-10-22-metric-spaces/img1.jpeg" alt="" width="300"/>
 
-The **distance function** in particular is any function which satisfies these three properties:
+Where the **distance metric** is any function which satisfies these three properties:
 1. Positive definiteness - All distances are either positive or zero
 2. Symmetry - Order of points doesn't affect distance
 3. Triangle inequality - See below
 
 <img src="/assets/images/blog/2024-10-22-metric-spaces/dist_props.jpeg" alt="" width="350"/>
 
-### Triangle inequality?
-The triangle inequality is one of the most common inequalities used in creating proofs in metric spaces. 
-
-Intuitively, it's that any one side of a 'triangle' is always shorter than (or equal to) the sum of the other two sides.
-
-So when thinking about just $\mathbb{R}$, it's just a 'flattened' triangle.
+### Prop 3: Triangle inequality
+Intuitively, this inequality says that any one side of a 'triangle' is always shorter than or equal to the sum of the other two sides. 
 
 <img src="/assets/images/blog/2024-10-22-metric-spaces/triangle_ineq 1.jpeg" alt="" width="200"/>
+
+So our distance function better respect this property as well. In the case of the $\mathbb{R}$ metric space, all distances satisfy the triangle inequality in the sense that the sum of all distances making up a line segment are equal to the distance of the daddy line segment.
 
 ## Vector spaces
 The triangle inequality makes a little more sense in vector spaces, where we have these directed vectors pointing which can visually form a triangle.

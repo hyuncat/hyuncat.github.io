@@ -9,7 +9,7 @@
 remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Site Settings
+# site settings
 locale                   : "en-US"
 title                    : "Sarah Hong"
 title_separator          : "-"
@@ -20,12 +20,12 @@ url                      : "https://hyuncat.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "hyuncat/hyuncat.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   :
-logo                     :
+logo                     : 
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -100,14 +100,14 @@ analytics:
 # Site Author
 author:
   name             : "Sarah Hong"
-  avatar           : "/assets/images/sarah_avatar.jpg"
-  bio              : "CS + Applied Mathematics @ Columbia"
+  avatar           : "/assets/images/sarah_avatar2.jpeg"
+  bio              : "CS + math @ Columbia"
   location         : "New York, NY"
   email            : "ssh2198@columbia.edu"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: ssh2198@columbia.edu"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: ssh2198@columbia.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"

@@ -6,7 +6,7 @@ author_profile: false
 ---
 <!-- {% include inline-network.html %} -->
 
-Here you can find all my blog posts. I write about math, CS, and research.
+Here you can find all my blog posts.
 
 <!-- <div id="network-graph"></div>
 

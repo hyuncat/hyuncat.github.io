@@ -1,5 +1,5 @@
 ---
-title: "Compactness"
+title: "WTF is compactness"
 layout: single
 date: 2024-12-16
 tags:

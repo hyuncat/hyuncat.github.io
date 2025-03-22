@@ -1,5 +1,5 @@
 ---
-title: "Balls and sets"
+title: "Balls and sets: Topological logic gates"
 layout: single
 date: 2024-12-16
 tags:
@@ -7,7 +7,9 @@ tags:
     - modern-analysis
 ---
 
-While my course is primarily an Analysis course, we went over a significant amount of basic topology. Ultimately it gave us a richer understanding the different theorems and ideas (eg, compactness, limit points, continuity, etc.). In this post I hope to go over the basic terminology and concepts which helped me the most.
+In my Modern Analysis class, we went over a significant amount of basic topology. I was confused at first, but I found it ultimately gave us a toolkit of concepts with which we could rigorously prove things about continuity, differentiation, and integration.
+
+In this post I hope to go over the basic terminology and concepts we learned.
 
 ## The ball
 A basic building block of topology is the **ball** $B_r(x)$. It has a radius $r$ and is centered around some $x$ value.
