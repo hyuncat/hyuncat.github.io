@@ -1,5 +1,5 @@
 ---
-title: "An foray into metric and vector spaces"
+title: "A foray into metric and vector spaces"
 layout: single
 date: 2024-10-22
 tags:
