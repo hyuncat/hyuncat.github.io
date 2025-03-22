@@ -28,7 +28,7 @@ So I decided it might be nice to go through the algorithm sequentially, refactor
 ## Refactoring
 
 ### A poorly-organized voxel rotating class
-So I started unpacking some of the 💩 I had written in the past month. The algorithm required frequent voxel rotations and comparisons for symmetry / mapping, so I had decided to create a "VoxelRotater" class which was supposed to deal with everything related to rotating these guys. But looking back, it contained a bunch of random functions not even related to rotating or voxels, was extremely messy, and had no consistent scheme to its member function arguments / return values.
+I started unpacking some of the 💩 I had written in the past month. The algorithm required frequent voxel rotations and comparisons for symmetry / mapping, so I had decided to create a "VoxelRotater" class which was supposed to deal with everything related to rotating these guys. But looking back, it contained a bunch of random functions not even related to rotating or voxels, was extremely messy, and had no consistent scheme to its member function arguments / return values.
 
 When I went to refactor it, I found there were so many considerations to organizing the code. Should I rotate the voxel, or just the bonds? Should I return just the bonds, or an entirely new voxel? Each voxel is like a node in a huge graph though, so how do I manage references to all the connections and partner-voxels in either case?
 
