@@ -9,6 +9,8 @@ tags:
     - stupid
 ---
 
+### Theorems are like libraries
+
 Theorems are like libraries,\
 propositions are its functions,\
 lemmas are the private methods,\
