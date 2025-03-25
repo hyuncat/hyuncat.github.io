@@ -11,7 +11,7 @@ My math professors in college would often intimidate us into writing vectors as 
 ### An illuminating example
 For example, take some transformation (ie, a matrix) $\mathbf{A}$ and a vector $\vec{x}$ on which it acts on. 
 
-Note that we format this function $\mathbf{A}$ as the `hstack` of its basis vectors in the transformed space. For now, suppose this is a good idea.
+Note that we format this function $\mathbf{A}$ as the `hstack` (horizontal-stack) of its vertical basis vectors in the transformed space. For now, suppose this is a good idea.
 
 Then we can write
 
@@ -35,7 +35,9 @@ Now when we multiply it out, we get
 - and $z$'s always multiplying with $w_i$ component. 
 
 So the purpose of aligning the matrix along the columns
-$$\begin{bmatrix}\vec u & \vec v & \vec w \end{bmatrix} \quad \text{ and not like } \quad \begin{bmatrix} \vec u \\ \vec v \\ \vec w \end{bmatrix}$$
-is so that when we do $F (x) = F \vec x$ it looks to be in the same order as normal function notation but is also consistent with the asymmetric ordering of matrix multiplication.
 
-**Remark:** We could order the matrix along the rows if we started using row vectors as well. Then the order would be $\vec x F$. But this looks a little weirder, right?
+$$\begin{bmatrix}\vec u & \vec v & \vec w \end{bmatrix} \quad \text{ and not like } \quad \begin{bmatrix} \vec u \\ \vec v \\ \vec w \end{bmatrix}$$
+
+is so that the equation $\textbf{A} \vec x$ is written in an order analogous to $f(x)$ from vanilla function notation.
+
+**Remark:** We could order the matrix along the rows if we started using row vectors as well. Then the order would be $\vec x \textbf{A}$. But this looks a little weirder, right?
