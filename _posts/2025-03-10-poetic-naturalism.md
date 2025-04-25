@@ -26,7 +26,7 @@ that there is one true 'natural' world
 but there are multiple ways of looking at it.
 
 ## Particle physics and Lovecraftian horror
-### Me: Collections of colliding particles
+### Me as a collection of colliding particles
 The naturalist, particle physics perspective unnerved me for the next few days. I thought about how this entity which is 'me', is really just a collection of particles colliding around in organized ways. 
 
 And how all of my behaviors and habits, my proclivities for procrastination, my grades - how they may have all been irreversibly determined since my birth. That they are not the product of any cosmic notion of "free will", but rather just the natural course of my molecules doing their thing.
@@ -46,7 +46,7 @@ And heuristics:
 - Social goals
 - Personal goals
 
-### Myy atoms are my friends
+### My atoms are my friends
 That my current collection of atoms may be predisposed or 'fated' to certain career paths or clothing choices thanks to my particular combination of genetics and upbringing.
 
 But still, that my atoms have my best interest in mind. For example, based on my particular goals I'm not going to purposely do something like sprinkle cinnamon into my MacBook speakers unless I truly believe it will be in the service of some goals.
