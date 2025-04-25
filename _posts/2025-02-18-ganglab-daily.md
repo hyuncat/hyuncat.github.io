@@ -4,10 +4,16 @@ layout: single
 date: 2025-02-18
 tags:
     - personal
+    - ganglab
 ---
 
 ## A day in the life at Gang lab
 I'm grateful to the Work Exemption Program for enabing me to continue working with the Gang Lab for my Spring 2025 semester at Columbia. As a part of my reflection project, I will be writing a series of blog posts detailing my career, research, and personal life lessons I've learned during my time here.
+
+The other blog posts are here:
+- [Poetic naturalism and the pursuit of truth](/blog/poetic-naturalism)
+- [How MOSES paints with symmetries](/blog/moses-painting)
+- [Object permanence, powerlessness, and the mystery of the night sky](/blog/object-permanence)
 
 I wanted to start by describing a typical day in the life in the Gang lab ChemE offices. We're housed in the third floor of Mudd in the Engineering Terrace. It's a cozy, fluorescently lit space with office cubicles—the kind of place where people stay home if they want to get actual work done. 
 
@@ -42,7 +48,7 @@ Elad Arad is his FOIL. They stand at seemingly opposite ends of the spectrum, in
 ### Dan and Elad collide: Dan's mother
 One day, Elad, Dan and I were walking back from grabbing lunch when the topic of Dan's mother came up. I can't recall why in hindsight, but we started joking around about how we're very close with her. Dan asked to prove it, saying that we probably don't even know her name - to which I came up with "Amanda" on the spot.
 
-Her name was not Amanda of course, but Elad really took to this joke. I only realized the extent to which he did when two weeks after this conversation, Elad asked Dan "How's Amanda?" To which Dan groaned.
+Her name was not Amanda of course, but I was quite moved by how much Elad really took to this joke. Though I only realized the extent to which he did when two weeks after this conversation, Elad asked Dan "How's Amanda?" (To which Dan groaned.)
 
 ## Lab conversations
 I end up chit-chatting a lot with the people inside our office as well. 
@@ -52,13 +58,11 @@ Among them, I sit right behind Raghavendra Nimiwal, a ChemE PhD. candidate in bo
 
 We initially bonded over Obsidian, a note-taking application, and how we organize our folders. Eventually our conversations wandered into the philosophical, as I shared the various life lessons I learned over winter break, from my month of isolation in the North Dakotan tundra.
 
-I don't know how, but we also started playing the cheese touch at one point. Raghav and I are both fiercely competitive though, so this children's game eventually turned so intense that we even started coding with our fingers crossed. At one point, Raghav tried riffing off a famous quote, speaking ominously while rubbing his hands together: 
+I shared [this video](https://www.youtube.com/watch?v=mnTU_hJoByA) with the lab, and we collectively agreed that Raghav is the human reincarnation of this penguin.
 
-"I will find you. And I will cheese touch you." 
-
-To which I screamed "TITLE IX". And drew + affixed a sticky note commemorating the moment and warning the rest of the lab of this imminent predator.
-
-<img src="/assets/images/blog/2025-02-18-ganglab-daily/img2.png" alt="Real numbers" width="400"/>
+<a href="https://www.youtube.com/watch?v=mnTU_hJoByA" target="_blank" rel="noopener">
+  <img src="https://img.youtube.com/vi/mnTU_hJoByA/0.jpg" alt="YouTube video thumbnail" style="max-width:100%; height:auto; border:0;">
+</a>
 
 ## Dinner at Shake Shack
 One day after a long night of research, Dan, Elad, Raghav and I went to Shake Shack for dinner. We picked up a kid's menu, which came equipped with a coloring page of various fruits, and four crayons. 
