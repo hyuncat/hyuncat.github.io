@@ -62,10 +62,10 @@ To which I screamed "TITLE IX". And drew + affixed a sticky note commemorating t
 ## Dinner at Shake Shack
 One day after a long night of research, Dan, Elad, Raghav and I went to Shake Shack for dinner. We picked up a kid's menu, which came equipped with a coloring page of various fruits, and four crayons. 
 
-To pass the time, I started coloring the french fries yellow. To my frustration, Dan started coloring the strawberry blue. At which point Elad joined in and started coloring the watermelon rind red. I tried maintaining some level of realism by coloring the burger bun yellow, but my aspirations were quickly extinguished as Dan swiped in to color the patty blue.
+To pass the time, I started coloring the french fries yellow. To my frustration, Dan started coloring the strawberry blue. At which point Elad joined in and started coloring the watermelon rind red. I tried maintaining some level of realism by coloring the burger bun yellow, but my aspirations were quickly shut down as Dan swept in to color the patty blue.
 
 <img src="/assets/images/blog/2025-02-18-ganglab-daily/img1.png" alt="Real numbers" width="500"/>
 
-It was the worst coloring job I've ever seen.
+It was an awful coloring job.
 
-And yet, in that moment, I felt relieved from the pressures of deadlines, of school, of research. It was just four adults coloring a children's coloring page horribly. We laughed about it as we were walking back to the lab, and we hung up the page on our lab door.
+Yet in that moment, it was just four adults coloring a children's coloring page horribly — free from pretense, deadlines, and funding cuts. We laughed about it as we were walking back to the lab, and we hung up the page on our lab door.
