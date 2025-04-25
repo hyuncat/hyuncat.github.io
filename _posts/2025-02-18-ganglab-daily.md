@@ -31,6 +31,7 @@ Dan McKeen is the resident martyr of this crew, equipped with a stock of "McKeen
 - "Blatantly disrespectful"
 - "Nominally, ...."
 - "That's messed up"
+- "It's cheeewwwsday innit"
 - "What the flip bro"
 
 Dan tells people that whenever two disjoint groups of his friends collide, they are able to find common ground in bullying him. (I find it not particularly difficult to see why.)
