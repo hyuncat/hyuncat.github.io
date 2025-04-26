@@ -7,18 +7,16 @@ tags:
     - ganglab
 ---
 ### A monthly malaise
-At the start of each month, I get these annoying bouts of malaise,  perhaps due to the personal reflections which the start of each month incites, where I get really lonely.
+At the start of each month, I get these annoying bouts of malaise, perhaps due to the personal reflections which the start of each month incites, where I get really melancholic.
 
 ### On object permanence
-Way back in January, I told Raghav that I struggled with this concept of object permanence over winter break.
-
-How like children cry when their parents cover their face before the peekaboo, that I often struggle to remember that my friends love me when they're away. To where even spending a day away from my friends can make me start questioning my self worth.
+Way back in January, I told Raghav that I struggled with this concept of object permanence over winter break. It describes how I forget how much my friends care for me when they're away, similar to the child that cries when their parents cover their eyes before the peek-a-boo. How I can feel so lonely after spending just a day without them.
 
 ## A chance party
 ### For dutiful bartending exam preparation
-In the thick of one of these monthly malaises, one Friday I was on my way to the library, when I fortuitously ran into Lucas and Dan McKeen walking to buy groceries for Lucas's party in preparation for his bartending exam. I didn't check the office Slack, so I didn't realize this was even going on—while I had a late PSET to finish, I decided on a whim to join them.
+I was in the thick of one of these monthly malaises, and on my way to the library, when I fortuitously ran into Lucas and Dan McKeen walking by. They were on their way to buy groceries for Lucas's party, which he was throwing in preparation for his bartending exam. I didn't check the office Slack, so I didn't realize this was even going on. Though I had a late PSET to finish, I decided on a whim to join them.
 
-It was a fun party; there were cocktails, cheese, and crackers; I DJ'ed the jazz music to recreate the exam vibe; Dan Redeker and I made fun of our friend Will for setting timers instead of alarms. I also talked to Raghav for the first time in two weeks—he'd been ignoring my messages, to which he apologized, saying he was going through a rough time.
+It was a fun party; there were cocktails, cheese, and crackers; I DJ'ed the jazz music to recreate the exam vibe; Dan Redeker and I made fun of our friend Will for setting timers instead of alarms. I also talked to Raghav for the first time in two weeks—he'd been ignoring my messages, to which he apologized, saying he was going through a nihilist penguin moment.
 
 ## A conversation with Raghav
 Raghav and I left the party together, walking back to our respective houses. It was raining hard that night, and we talked about what we'd been going through in our lives.
@@ -32,18 +30,17 @@ He shared his own struggles, bringing up how he too had recently been thinking a
 ### Powerlessness, despair
 I kept thinking about why I was still struggling with object permanence even after all this time. Through our conversation, I realized it was because of how insecure I was in my powerlessness.
 
-- Because there exist relationships where my predictive models are proven wrong, where despite believing due to XYZ factors my effort is or should be reciprocated, it isn't.
+- Because there exist relationships where despite believing due to XYZ factors my effort is or should be reciprocated, it isn't.
 - Because there exist relationships where I can put in infinite effort, yet due to circumstances beyond my control, they don't pan out as I hope.
 
-I realized that this powerlessness to avoid sadness is what made me despair. That I can never fully enjoy what I have in fear of losing it.
+I realized that this powerlessness—my inability to guarantee the longevity of my relationships—is what made me despair. That I can never fully enjoy what I have in fear of always losing it.
 
 ### A poem on how much you are loved
-In response, Raghav recited a poem back to me:
-One on how it's tragic that people don't realize how much they are loved. That you don't know if your smile walking down the street made it possible for someone else to walk the next few blocks; or how people at the office miss you when you're gone.
+In response, Raghav recited a poem back to me: One on how it's tragic that people don't realize how much they are loved. That you don't know if your smile walking down the street made it possible for someone else to walk the next few blocks; or how people at the office miss you when you're gone.
 
 I questioned whether the poem is always truly applicable, because what if someone really isn't loved by people like that.
 
-And he clarified he likes the poem because he feels that way about the world; because he knows and loves so many cool people, and how he often forgets to tell them how cool they are.
+But he clarified he likes the poem because he feels that way about the world; because he knows and loves so many cool people, and how he often forgets to tell them how cool they are.
 
 Including me. How even yesterday, he was working in the butler main room, hoping I would be there.
 
