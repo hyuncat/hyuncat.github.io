@@ -10,9 +10,9 @@ tags:
 ## A groundbreaking revelation
 I was today years old when I realized the convoluted and "novel" data structure I'd been bashing my head against for the past few weeks was really just an adjacency list the entire time.
 
-For context, I've been writing an agglomerative hierarchical clustering algorithm from scratch using C++ for my bioinformatics research (RichCluster). Integral to my algorithm was a vestigial data structure from original source code, which I only realized today was actually just an adjacency list in disguise.
+For context, I've been writing an agglomerative hierarchical clustering algorithm from scratch using C++ for my bioinformatics research (RichCluster). Integral to my algorithm was a vestigial data structure from original source code, which I realized today was an adjacency list in disguise.
 
-Even though the connection seems (and probably is) trivial, it connected the clustering problem to graph theory and my running view of the world as being a giant network graph, in a way which blew my naive undergraduate mind.
+Even though the connection seems (and probably is) trivial, it connected the clustering problem to graph theory and my running view of the world as being a giant layered network graph, in a way which blew my naive undergraduate mind.
 
 ### Groundbreaking revelations deserve breaks?...
 After this revelation, I immediately told myself "I deserve a break."

@@ -49,7 +49,7 @@ His words warmed my heart. I thought about all of my memories of Raghav, Dan, an
 
 - How Raghav bought me bandaids because he threw a snowball a little too hard, accidentally scratching my face.
 - How Dan bought me $40 worth of food while I was sick, told me he spent only ten, then blocked me on Venmo after sending me back 30 of what I paid him.
-- Even that god awful shake shack coloring page.
+- Even that stupid Shake Shack coloring page.
 
 Recalling these, I realized maybe the antidote to my malaise were these small moments of love: A collection of memories to draw from when I'm feeling lonely, to remind me of how happy I am to be able to spend time with these people.
 
