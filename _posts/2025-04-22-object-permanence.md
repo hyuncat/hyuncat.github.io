@@ -42,7 +42,7 @@ I questioned whether the poem is always truly applicable, because what if someon
 
 But he clarified he likes the poem because he feels that way about the world; because he knows and loves so many cool people, and how he often forgets to tell them how cool they are.
 
-Including me. How even yesterday, he was working in the butler main room, hoping I would be there.
+Including me. How even yesterday, he was working in the Butler Library main room, hoping I would be there.
 
 ### Memories of love
 His words warmed my heart. I thought about all of my memories of Raghav, Dan, and the rest of the lab.
