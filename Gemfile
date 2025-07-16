@@ -9,6 +9,7 @@ gem 'webrick', '>=1.7.0'
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", "~> 229", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
+gem 'sassc'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
