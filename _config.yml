@@ -5,8 +5,8 @@
 # in the templates via {{ site.myvariable }}.
 
 
-# theme                  : "minimal-mistakes-jekyll"
-remote_theme             : "mmistakes/minimal-mistakes"
+theme                  : "_theme"
+remote_theme             : # "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # site settings
