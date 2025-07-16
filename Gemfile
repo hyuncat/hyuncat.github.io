@@ -11,10 +11,17 @@ gem 'webrick', '>=1.7.0'
 gem "jekyll-include-cache", group: :jekyll_plugins
 gem "jekyll-sass-converter", "~> 2.2"
 gem 'sassc'
+gem "jekyll-tagging"
+
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-include-cache"
+  gem "jekyll-sitemap"
+  gem "jekyll-gist"
+  gem "jekyll-tagging"
+  gem "jekyll-archives"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
