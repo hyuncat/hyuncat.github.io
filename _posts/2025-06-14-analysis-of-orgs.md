@@ -49,11 +49,12 @@ The goals range in scope from
 - world
 
 ### The strata of organizations
-Existing within the context of these different tiers of looking at the organization
+The various strata at which we can analyze the incentives and behaviors of the organization are
 
-1. intra-organization (the team)
-2. intra-industry (other robotics clubs)
-3. inter-industry (companies)
+1. personal
+2. intra-organization (the team)
+3. intra-industry (other robotics clubs)
+4. inter-industry (companies)
 
 ### Competition and cooperation in context
 And based on the dis/alignment of people's goals, we can see competition and cooperation existing within each tier—a complex web of relationships based on functional roles but undercut with the competitive edge of living in a world with finite resources.
