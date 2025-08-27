@@ -40,26 +40,20 @@ CURC's leadership team consists of the following broad categories:
 
 with both internal and external working together in tandem with the lead(s) to achieve certain goals in the context of other robotics clubs and the tech industry as a whole.
 
-### The goals of an organization
-The goals range in scope from
+### Competition and cooperation in context
 
-- personal
-- organizational
-- industry
-- world
+#### The strata of organizations
 
-### The strata of organizations
-The various strata at which we can analyze the incentives and behaviors of the organization are
+The various tiers at which we can analyze the incentives and behaviors of the organization are
 
 1. personal
 2. intra-organization (the team)
 3. intra-industry (other robotics clubs)
 4. inter-industry (companies)
 
-### Competition and cooperation in context
-And based on the dis/alignment of people's goals, we can see competition and cooperation existing within each tier—a complex web of relationships based on functional roles but undercut with the competitive edge of living in a world with finite resources.
+And based on the dis/alignment of people's goals within each strata, we can see competition and cooperation existing within each tier—a complex web of relationships based on functional roles but undercut with the competitive edge of living in a world with finite resources.
 
-#### Personal goals
+#### 1. Personal goals
 People may have different goals
 
 - ambition / power-driven motives
@@ -76,7 +70,7 @@ as well as different skills
 
 And these personal goals interface with the various levels of organization to guide competitive and cooperative behaviors.
 
-#### Intra-organization goals
+#### 2. Intra-organization goals
 Within the organization,
 
 - ambition/power hungry people want to become president
@@ -85,7 +79,7 @@ Within the organization,
 
 But we all align within the broader context of sharing intra/inter-industry goals.
 
-#### Intra-industry goals
+#### 3. Intra-industry goals
 Between different robotics clubs, we see a competitive ecosystem emerge, with robotics/engineering clubs being stacked against each other based on
 
 - competition performance
@@ -98,7 +92,7 @@ But with CCBR, I also found inter-club collaboration through the shared personal
 - personal learning
 - ambition
 
-#### Inter-industry goals
+#### 4. Inter-industry goals
 And robotics clubs come together as well as out of the "inter-industry" motives of
 
 - strengthening the greater robotics community
