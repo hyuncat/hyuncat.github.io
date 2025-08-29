@@ -25,6 +25,6 @@ Or a minstrel show?
 
 Wandering eyes come and go\
 gawking at me. Pity, disgust,\
-futile needles prodding at my insides\
+heat-seeking needles prodding at my insides\
 trying to straighten out something\
 that I didn't want straightening in the first place.
