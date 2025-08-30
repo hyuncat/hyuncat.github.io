@@ -15,8 +15,8 @@ title_separator          : "-"
 subtitle                 :
 name                     : "Sarah Hong"
 description              : "Sarah Hong's personal website and blog"
-url                      : "https://hyuncat.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : "https://hyuncat.com"
+baseurl                  : ""
 repository               : "hyuncat/hyuncat.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   :
 logo                     : 
