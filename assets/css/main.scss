@@ -1,0 +1,11 @@
+---
+---
+
+@charset "utf-8";
+
+// Pick a skin (defines colors/fonts/etc.)
+// Options: default, air, contrast, dark, dirt, neon, mint, plum, sunrise, …
+@import "minimal-mistakes/skins/default"; // change "default" to whatever skin you like
+
+// Import the core Minimal Mistakes styles
+@import "minimal-mistakes";
