@@ -19,7 +19,7 @@ url                      : "https://hyuncat.com"
 baseurl                  : ""
 repository               : "hyuncat/hyuncat.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   :
-logo                     : 
+logo                     : "/assets/images/sarah_avatar2.jpeg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
