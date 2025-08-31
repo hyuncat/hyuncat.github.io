@@ -1,7 +1,4 @@
 {
   "version": 2,
-  "trailingSlash": true,
-  "routes": [
-    { "handle": "filesystem" }
-  ]
+  "trailingSlash": true
 }
