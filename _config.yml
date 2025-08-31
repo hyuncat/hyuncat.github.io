@@ -298,7 +298,7 @@ defaults:
       share: true
       related: true
       show_date: true
-      permalink: /blog/:title
+      permalink: /blog/:title/
       search: true
 
   # _notes
