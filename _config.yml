@@ -249,9 +249,10 @@ whitelist:
 category_archive:
   type: liquid
   path: /
-# tag_archive:
-#   type: liquid
-#   path: /tags/
+
+tag_archive:
+  type: liquid
+  path: /tags/
 
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
@@ -291,7 +292,7 @@ defaults:
       path: "_posts"
       type: posts
     values:
-      layout: posts
+      layout: single
       author_profile: true
       read_time: true
       comments: true
