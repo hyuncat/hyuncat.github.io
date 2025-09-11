@@ -8,18 +8,27 @@ header:
 ---
 
 ## About me
-Thanks for visiting my blog! I am in my third year at Columbia University, studying CS and math. I'm involved in a lot of seemingly unrelated research, tied together by a faint interest in math and a passion for creating. Outside of research, I play violin and help lead the Columbia Robotics Club.
+I'm a senior at Columbia University, studying CS and math. I'm interested in IoT and robotics, as the application of my CS education to real-world impact.
 
-My blogs are similarly sporadic in frequency and topic, but I write mainly on cool algorithms, math, and personal epiphanies.
+### New to my blog? Start here
+I've written two series of blog posts which span the essential bits of who I am and what I've been thinking about over the past year.
 
-## My research
-I'm currently involved in three research projects.
+- [Spring 2025](/_posts/2025-02-18-ganglab-daily.md)
+- [Summer 2025](/_posts/2025-08-27-summer-2025.md)
 
-1. **MOSES** (Columbia Gang Lab) - A foundational algorithm applying the group theoretic concept of 'symmetry' to chemical engineering. An information-minimizing method for to designing self-assembling DNA origami nanoparticle lattices. Our paper was accepted to ACS Nano! This [blog post](/_posts/2024-10-06-ganglab.md) also talks about it more in depth.
+I also write enjoy writing poetry! A friend told me he thinks writing poetry helps him learn more about himself. You can see my attempts at that [here](/tags/#poem).
 
-2. **Synchrony** (NYU Dennis Shasha Group) - An opinionated practice tool for musicians, which compares a user's recording to a MIDI score and computes the user's mistakes in real-time. Uses a probabilistic pitch detection method that utilizes the MIDI to detect note events. Under supervision of the kind NYU professor Dennis Shasha.
+## Projects
+I'm currently involved in two research projects.
 
-3. **RichCluster** (UND Hur Lab) - An Rcpp library for performing hierarchical clustering on multiple enriched genomics datasets. Clusters different biological 'terms' based on overlapping gene content. Coded in C++ for fast clustering, with customizable linkage / distance metrics and supporting visualizations. (Paper-in-progress)
+1. [**MOSES**](https://github.com/ganglab-bnl/MOSES) (Columbia Gang Lab) - An information-minimizing algorithm applying the group theoretic concept of 'symmetry' to enable DNA origami self-assembly. Published in [ACS Nano](https://pubs.acs.org/doi/full/10.1021/acsnano.4c17408) and featured on the [front cover](https://pubs.acs.org/toc/ancac3/19/15)!
 
+2. [**TuneBuddy**](https://github.com/hyuncat/Synchrony) (NYU Dennis Shasha Group) - An opinionated practice tool for musicians, which compares a user's recording to a MIDI score and computes the user's mistakes in real-time. Under supervision of the kind NYU professor Dennis Shasha.
 
-For fun, I also play violin in the Barrio Tango Orchestra with some really amazing people. My friend and I have both started learning tango as well. 👯‍♀️
+I also help lead the Columbia Robotics Club—encompassed in which lie two more projects.
+
+1. [**MakeCU**](https://www.makecu.dev/) - Columbia's flagship hardware hackathon. I was the co-director in planning this event, alongside [Joseph](https://www.linkedin.com/in/jleetj/) (the goat).
+
+2. [**CCBR**](https://www.ccbr.dev/) - An open-source modular humanoid project, in collaboration with some friends I met at [ICRA](/_posts/2025-05-27-icra.md). I'm the Columbia liason and a founding software member of the team.
+
+For fun, I also play violin in the Barrio Tango Orchestra with some amazing friends.

@@ -122,6 +122,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/sarahhxng"
+    - label: "Spotify"
+      icon: "fab fa-fw fa-spotify"
+      url: "https://open.spotify.com/user/nrkjbdqb3gwxlzypjce5vvqra?si=fe0cb9a9f5b8433d"
 
 # Site Footer
 footer:
