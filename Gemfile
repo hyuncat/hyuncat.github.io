@@ -1,6 +1,12 @@
 ENV["LANG"] = "en_US.UTF-8"
 source "https://rubygems.org"
-#
+
+
+gem "openssl", ">= 3.2.2"  
+gem "csv"                  
+gem "faraday-retry"   
+
+
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minimal-mistakes-jekyll" 
 gem 'webrick', '>=1.7.0'
