@@ -28,39 +28,41 @@ Each recommendation itself comes from a story—Double Chicken Please came from 
 
 This semester, I realized that visiting restaurants with friends, having deep conversations over good food, is what I live for. Small, isolated moments of connection, learning more about myself, others, and the world.
 
-who am i based on what food i like
-- korean american that likes experimenting with creative food combinations
-- valuing humor -> valuing innovation and creativity in flavor combinations
-- when I want to be comforted, i go for warm korean flavors because they remind me of my childhood
+Who am I based on what food I like
+- A Korean American that likes experimenting with creative food combinations
+- Valuing humor -> valuing innovation and creativity in flavor combinations
+- When I want to be comforted, I go for warm Korean flavors because they remind me of my childhood
 
-exploration vs comfort
-- conversation with bryan where he was shitting on gastronomy for being a sterile way of approaching food, which should serve the function of comfort
-- i disagreed, but it brings to question what balance one should strike between the two
+Exploration vs comfort
+- I had a conversation with a distant toxic acquaintance, where he revived a two-year-long deadzone to shit on gastronomy for being a sterile way of approaching food. He argued that food should primarily serve the function of comfort.
+- I disagreed, but it brings to question what balance one should strike between the two
 
-i see the dichotomy mirrored in cho dang gol vs. double chicken please, though to different extents
+I see the dichotomy mirrored in Cho Dang Gol vs. Double Chicken Please, though to different extents.
 
-if you want a classic "good" cocktail, you get a gin and tonic. or a "good" whiskey. but double chicken please is about pushing the boundary of what a drink can look like - i got their signature "japanese cold noodle" drink and was shocked at how accurate it was. but would i order it again? no...
+If you want a classic "good" cocktail, you get a gin and tonic. or a "good" whiskey. But Double Chicken Please is about pushing the boundary of what a drink can look like—I got their signature "japanese cold noodle" drink and was shocked at how accurate it was. But would I order it again? No...
 
-meanwhile, i go to CDG every week. whenever i'm having a bad day, i go to CDG and their tofu stews cheer me up. they are comforting, high quality, and delicious.
+Meanwhile, I go to CDG every week. Whenever I'm having a bad day, I go to CDG and their tofu stews cheer me up. They are comforting, high quality, and delicious.
 
 ### Storytime
-not everything can be connected with a story.
-the tying thread between all these places is ME: an upstart korean american college student in her early 20s trying to taste good food based on her friends' recommendations.
+Not everything can be connected with a story.
+The real tying thread between all these places is ME: an upstart Korean American college student in her early 20s trying to taste good food based on her friends' recommendations.
 
-what have i learned from all this?
-- being friends with a guy from southern china has helped me learn to appreciate oily food - rich and flavorful foods
-- being friends with a pretentiously unpretentious alcoholic has wisened me to the world of cocktail gastronomy - the art of recreating the essence of other flavor combinations within the morphology of an alcoholic drink
-- ...and that i should make more friends.
+What have I learned from all this?
+- Being friends with a guy from Southern China has helped me learn to appreciate oily food—rich and flavorful foods
+- Being friends with a pretentiously unpretentious alcoholic has wisened me to the world of cocktail gastronomy - the art of recreating the essence of other flavor combinations within the morphology of an alcoholic drink
+- ...and that I should make more friends.
 
 ### Pepero day
-it was pepero day, and i felt a little sad. 
-i was walking back from orchestra rehearsal, and decided i'd buy all the pepero i could find from hmart. 
+It was Pepero day, and I felt a little sad. 
+I was walking back from orchestra rehearsal, and decided I'd buy all the Pepero I could find from Hmart. 
 
-got three of my friends, two from the lab and one from robotics, all together to rank the flavors. i put my spreadsheet-making skills to the test and we rated them one by one. 
+I got three of my friends, two from the lab and one from robotics, all together to rank the flavors. I put my spreadsheet-making skills to the test and we rated them one by one. 
 
 ![[Screenshot 2025-12-01 at 1.38.55 PM.png]]
 
-next steps - i want to engage more deeply with food. i've been "consuming" a lot of food, but i want to start "creating". i used to view food as a frivolous endeavor, only serving to obstruct me on my weight loss journey. redefining food as a mechanism of connection through a representation of culture, while satisfying the human need for sustenance. in the same way we put in effort for relationships, i want to gain a baseline working understanding of all the components of life, including food and drink.
+As for next steps: I want to engage more deeply with food. I've been "consuming" a lot of food, but I want to start "creating". 
+
+I used to view food as a frivolous endeavor, only serving to obstruct me on my weight loss journey. Over the past year, I've redefined food as a mechanism of connection through a representation of culture, while satisfying the human need for sustenance. In the same way we put in effort for relationships, I want to gain a baseline working understanding of all the components of life, including food and drink.
 
 ### Drinking and living?
 Earlier in the summer, while I was in my "wanting to flow out my life through axioms" phase: I asked my dad for feedback on my "live truthfully" axiom. He shared that his would be "정신 차리고 살자." I asked him how drinking alcohol fits into that axiom, to which he replied "Alcohol cools down my brain that is always occupied by too many things. So, it helps sometimes."

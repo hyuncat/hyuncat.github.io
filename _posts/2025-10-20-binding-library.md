@@ -5,62 +5,67 @@ date: 2025-10-20
 tags:
     - ganglab
     - research
-    - retrospective
     - cs
+    - graph-theory
 ---
-this semester, i was tasked with finishing up the binding library project for dan redeker, and packaging it into a user-friendly interface. this blog post aims to explain what exactly this project is, in the hopes of conveying why i find it cool.
+This semester, I was tasked with finishing up the binding library project for Dan Redeker, and packaging it into a user-friendly interface. This blog post aims to explain what exactly this project is, in the hopes of also conveying why I find it cool.
 
-### the setting: DNA origami
-some necessary prerequisite information about the gang lab: we are a material science research group, focused on a technique called "DNA origami."
+### The setting: DNA origami
+Some necessary prerequisite information about the Gang Lab: We are a material science research group, focused on a technique called "DNA origami." The name comes from how we fold DNA into different shapes to form the basis of our nanomaterials. 
 
-the name comes from how we fold DNA into different shapes to form the basis of our nanomaterials. 
+Our lab works a lot with octahedral and tetrahedral dna origami wireframes, which we can "load" with arbitrary nanoparticles like gold.
 
-our lab works a lot with octahedral and tetrahedral dna origami wireframes, which we can "load" with arbitrary nanoparticles like gold.
+<img src="/assets/images/blog/2025-10-20-binding-library/img1.jpg" alt="Tightrope walker" width="800"/>
 
-![[IMG_1846.jpg]]
+<img src="/assets/images/blog/2025-10-20-binding-library/img4.jpg" alt="Tightrope walker" width="200"/>
 
-![[IMG_1849.jpg|100]]
+Dr. Gang's work was influential in setting the foundations for the technique of using nanoparticle-loaded DNA origami as building blocks to create larger, tiling lattice structures.
 
-dr. gang's work was influential in setting the foundations for the technique of using nanoparticle-loaded dna origami as building blocks to create larger, tiling lattice structures.
-![[IMG_1848.jpg]]
+<img src="/assets/images/blog/2025-10-20-binding-library/img3.jpg" alt="Tightrope walker" width="800"/>
 
 
-notably, this self assembly is enabled through the use of single stranded dna sticking out at the vertices of the octahedra. these are used to connect different building blocks together, and only at certain sides, such that the desired nanoparticle structure is achieved through self assembly.
-![[IMG_1847.jpg]]
-these single stranded sequences, also called "sticky ends" or "bonds", are often abstracted away with using a single color to represent strands of differing base pair content—strands which in theory should not bind together.
+Notably, this self assembly is enabled through the use of single stranded DNA sticking out at the vertices of the octahedra. These are used to connect different building blocks together, and only at certain sides, such that the desired nanoparticle structure is achieved through self assembly.
 
-### the problem
-however, if too many of the base pairs overlap, there's a chance that a voxel can bind in the wrong orientation, leading to the propagation of structural binding errors.
-![[IMG_1850.jpg]]
+<img src="/assets/images/blog/2025-10-20-binding-library/img2.jpg" alt="Tightrope walker" width="800"/>
 
-dan's binding library project aims to address this problem of cross-contamination: given a DNA sequence length of N base pairs, what is the maximum 'library' of different sequences we can draw colors from, such that no two sequences will bind to any other sequence in the library other than to its rightful complement?
+These single stranded sequences, also called "sticky ends" or "bonds", are often abstracted away with using a single color to represent strands of differing base pair content—strands which in theory should not bind together.
 
-### dan's solution
-the solution was surprisingly elegant. 
+### The problem
+However, if too many of the base pairs overlap, there's a chance that a voxel can bind in the wrong orientation, leading to the propagation of structural binding errors.
 
-first, a definition: two sequences are **"orthogonal"** to each other if they contain no matching subsequence of over 4 base pairs.
+<img src="/assets/images/blog/2025-10-20-binding-library/img5.jpg" alt="Tightrope walker" width="900"/>
 
-1. compute all possible DNA sequences of length 8
-2. we sort it two sets: A (color) and A' (complementary) sequence spaces
-3. compute all pairwise orthogonality between $A \times A$ and $A \times A'$ and store the two in a matrix. 
-	1. this becomes a 'graph', where the values are booleans (1, 0) representing whether two sequences are orthogonal (1) or not (0).
-4. compute a third matrix containing the OR of the AA and AA' matrices.
-	1. this accounts for the fact that a sequence C which is orthogonal to A will correspond to a sequence C' which is orthogonal to A'.
-5. now apply a minimally connected graph algorithm.
+Dan Redeker's Binding Library project aims to address this problem of cross-contamination: given a DNA sequence length of N base pairs, what is the maximum 'library' of different sequences we can draw colors from, such that no two sequences will bind to any other sequence in the library other than to its rightful complement?
 
-the following images are from dan redeker's beautiful presentation on the project.
-- in this case, each "node" in the graph is a DNA sequence. 
-- moreover, two nodes have an "edge" between them if they are orthogonal.
+### Dan's solution
+The solution was surprisingly elegant. 
 
-![[Screenshot 2025-12-03 at 2.18.25 PM.png]]
+First, a definition: Two sequences are **"orthogonal"** to each other if they contain no matching subsequence of over 4 base pairs.
 
-the graph algorithm goes as follows:
+1. Compute all possible DNA sequences of length 8
+2. e sort it two sets: A (color) and A' (complementary) sequence spaces
+3. Compute all pairwise orthogonality between $A \times A$ and $A \times A'$ and store the two in a matrix. 
+	1. This becomes a 'graph', where the values are booleans (1, 0) representing whether two sequences are orthogonal (1) or not (0).
+4. Compute a third matrix containing the OR of the AA and AA' matrices.
+	1. This accounts for the fact that a sequence C which is orthogonal to A will correspond to a sequence C' which is orthogonal to A'.
+5. Now apply a minimally connected graph algorithm.
 
-while there exist nodes (vertices) in the graph...
-- find the node with the lowest degree
-- remove that node from the graph and place it into our library.
-- remove the neighbors which used to be connected to that node from the graph as well.
-- repeat until there are no nodes left.
-![[Screenshot 2025-12-03 at 2.19.14 PM.png]]
+The following images are from Dan's beautiful presentation on the project. Notes:
+- In this case, each "node" in the graph is a DNA sequence. 
+- Moreover, two nodes have an "edge" between them if they are orthogonal.
 
-cool stuff!
+<img src="/assets/images/blog/2025-10-20-binding-library/img9.png" alt="Tightrope walker" width="800"/>
+
+Finally, the graph algorithm goes as follows:
+
+While there exist nodes (vertices) in the graph...
+- Find the node with the lowest degree
+- Remove that node from the graph and place it into our library.
+- Remove the neighbors which used to be connected to that node from the graph as well.
+- Repeat until there are no nodes left.
+
+<img src="/assets/images/blog/2025-10-20-binding-library/img10.png" alt="Tightrope walker" width="800"/>
+
+The result is a library of "different-enough" DNA sequences (bonds) which we can use to connect our DNA origami lattices together.
+
+Cool stuff!
