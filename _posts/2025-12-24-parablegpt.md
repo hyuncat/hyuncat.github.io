@@ -172,12 +172,12 @@ And to strive to live in accordance to the three treasures:
 - Humility
 
 ### Common themes
-the common themes behind the moral teachings were
-- respect God
-- forgive others
-- uphold justice
-- don't strive for the material
-- strive for balance
+The common themes behind the moral teachings were
+- Respect God
+- Forgive others
+- Uphold justice
+- Don't strive for the material
+- Strive for balance
 
 Taken at face value, these seem like decent-enough, prosocial ways to conduct your life.
 
@@ -234,16 +234,16 @@ I revisited the fundamental questions of religion under Spinozism:
 
 Now, I could take my Catholic upbringing, or a lot more religions now for that matter, replace "God" with "Universe", discard any romantic answers to the first question and feel justified in its answers to the other two.
 
-Rather, my answer to the first question, and to Tolstoy's existential impetus for faith, rests on my certain belief in a [Scheffer-like collective afterlife](https://www.amazon.com/Death-Afterlife-Berkeley-Tanner-Lectures/dp/019046917X)—being a part of the Universe is the greatest other available. That my actions will be forever memorialized through the ripples of their cause-effect chains, propagated by the ever-increasing arrows of time and entropy. And that my remains will fertilize the soil, feeding the blooms atop it.
+Rather, my answer to the first question, and to Tolstoy's existential impetus for faith, rests on my now-certain belief in a [Scheffer-like collective afterlife](https://www.amazon.com/Death-Afterlife-Berkeley-Tanner-Lectures/dp/019046917X)—in which, being a part of the Universe is the greatest 'collective' available. That my actions will be forever memorialized through the ripples of their cause-effect chains, propagated by the ever-increasing arrows of time and entropy. And that my remains will fertilize the soil, feeding the blooms atop it.
 
 ## Works cited
-
-Scheffler, Samuel. Death and the Afterlife. Oxford UP, 2013.
     
 Boyer, Pascal. Religion Explained: The Evolutionary Origins of Religious Thought. Basic Books, 2001.
     
-Tolstoy, Leo. A Confession. Translated by David Patterson, W. W. Norton, 1983.
-
 Dennett, Daniel C. “Where Am I?” Brainstorms: Philosophical Essays on Mind and Psychology, MIT Press, 1978, pp. 310–323.
 
 IBM. “What Is a Transformer Model?” IBM Think, www.ibm.com/think/topics/transformer-model. Accessed 24 Dec. 2025.
+
+Scheffler, Samuel. Death and the Afterlife. Oxford UP, 2013.
+
+Tolstoy, Leo. A Confession. Translated by David Patterson, W. W. Norton, 1983.
