@@ -238,12 +238,12 @@ Rather, my answer to the first question, and to Tolstoy's existential impetus fo
 
 ## Works cited
     
-Boyer, Pascal. Religion Explained: The Evolutionary Origins of Religious Thought. Basic Books, 2001.
+Boyer, Pascal. *Religion Explained: The Evolutionary Origins of Religious Thought.* Basic Books, 2001.
     
-Dennett, Daniel C. “Where Am I?” Brainstorms: Philosophical Essays on Mind and Psychology, MIT Press, 1978, pp. 310–323.
+Dennett, Daniel C. “Where Am I?” *Brainstorms: Philosophical Essays on Mind and Psychology*, MIT Press, 1978, pp. 310–323.
 
-IBM. “What Is a Transformer Model?” IBM Think, www.ibm.com/think/topics/transformer-model. Accessed 24 Dec. 2025.
+IBM. “What Is a Transformer Model?” *IBM Think*, www.ibm.com/think/topics/transformer-model. Accessed 24 Dec. 2025.
 
-Scheffler, Samuel. Death and the Afterlife. Oxford UP, 2013.
+Scheffler, Samuel. *Death and the Afterlife*. Oxford UP, 2013.
 
-Tolstoy, Leo. A Confession. Translated by David Patterson, W. W. Norton, 1983.
+Tolstoy, Leo. *A Confession*. Translated by David Patterson, W. W. Norton, 1983.
