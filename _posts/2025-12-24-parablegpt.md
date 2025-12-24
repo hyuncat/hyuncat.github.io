@@ -84,7 +84,7 @@ Perhaps it is this context which would best set the stage for my final project f
 ## ParableGPT, in context
 Admittedly, the idea for ParableGPT was incepted way before I'd read Tolstoy. The idea was simple: to train a locally-hosted large language model (LLM) to spit out parables in the style of various religions using retrieval-augmented generation (RAG).
 
-Truthfully, ParableGPT came from wanting to poke fun at the untouchable sanctity of holy literature; a snapshot of my own spiritual views at the time, concerning the unceremonious nature of cognition and human language as sophisticated probability maximizing machines.
+Rather, ParableGPT came from wanting to poke fun at the untouchable sanctity of holy literature; a snapshot of my own spiritual views at the time, concerning the unceremonious nature of cognition and human language as sophisticated probability maximizing machines.
 
 ### The large language model
 Underlying ParableGPT is an LLM, a computational neural network, with 'neurons' (each storing a single number) arranged in layers, such that:
