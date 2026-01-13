@@ -8,6 +8,8 @@ main:
   #   url: /notes/
   - title: "Projects"
     url: /projects/
+  - title: "Secrets"
+    url: /secrets/
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
