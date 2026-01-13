@@ -88,6 +88,16 @@ permalink: /secrets/
       </div>
     </details>
 
+    <details class="hint-item">
+      <summary>
+        <span>Secret #2</span>
+        <span class="chev">›</span>
+      </summary>
+      <div class="hint-content">
+        <p class="hint-text">"What's Sarah's vibe?"</p>
+      </div>
+    </details>
+
   </div>
 
   <div class="hint-note">
@@ -108,7 +118,7 @@ permalink: /secrets/
   async function go() {
     const el = document.getElementById("secret-input");
     const msg = document.getElementById("secret-msg");
-    const code = (el.value || "").trim();
+    const code = (el.value || "").trim().toLowerCase();
 
     if (!code) {
       msg.textContent = "Enter a code.";
