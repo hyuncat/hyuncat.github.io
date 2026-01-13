@@ -94,14 +94,14 @@ permalink: /secrets/
         <span class="chev">›</span>
       </summary>
       <div class="hint-content">
-        <p class="hint-text">"What's Sarah's vibe?"</p>
+        <p class="hint-text">"Near an Angel lies a missed opportunity. What is it?"</p>
       </div>
     </details>
 
   </div>
 
   <div class="hint-note">
-    (Codes are case-sensitive.)
+    (Codes are case-insensitive.)
   </div>
 </div>
 
