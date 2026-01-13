@@ -97,19 +97,28 @@ permalink: /secrets/
 
 <script src="/assets/images/secrets/header.js"></script>
 <script> 
-  function go() {
+
+  async function sha256Hex(s) {
+    const data = new TextEncoder().encode(s);
+    const hashBuf = await crypto.subtle.digest("SHA-256", data);
+    const hashArr = Array.from(new Uint8Array(hashBuf));
+    return hashArr.map(b => b.toString(16).padStart(2, "0")).join("");
+  }
+
+  async function go() {
     const el = document.getElementById("secret-input");
     const msg = document.getElementById("secret-msg");
     const code = (el.value || "").trim();
-
-    const routes = window.SECRET_ROUTES || {};
 
     if (!code) {
       msg.textContent = "Enter a code.";
       return;
     }
 
-    const dest = routes[code];
+    const key = await sha256Hex(`${window.SALT}|${code}`);
+    const routes = window.SECRET_HASH_ROUTES || {};
+    const dest = routes[key];
+
     if (!dest) {
       msg.textContent = "Wrong!";
       return;
