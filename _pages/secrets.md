@@ -95,23 +95,14 @@ permalink: /secrets/
   </div>
 </div>
 
+<script src="/assets/images/secrets/header.js"></script>
 <script> 
-  const routes = {
-    "biboombap": "/secrets/biboombap/",
-    "lukas graham": "/blog/spain_enjoyers/"
-  }
-  
-  // Dropdown selection -> hint text
-  // (Keys here match the dropdown option values above.)
-  const hints = {
-    "biboombap": "There's only one thing I love more than mahjong... it's beating up Koreans with my secret identity!.",
-    "lukas graham": "Take an artist who wrote a song about 3 minus the number in the title of this post."
-  };;
-
   function go() {
     const el = document.getElementById("secret-input");
     const msg = document.getElementById("secret-msg");
     const code = (el.value || "").trim();
+
+    const routes = window.SECRET_ROUTES || {};
 
     if (!code) {
       msg.textContent = "Enter a code.";
