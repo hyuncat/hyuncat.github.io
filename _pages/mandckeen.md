@@ -1,14 +1,14 @@
 ---
 layout: single
-title: "For Dan"
-permalink: /secrets/mandckeen/
+title: "Dreaming of brownstones"
+permalink: /secrets/burgersquad/
 ---
 
 <div style="max-width: 520px; margin: 0 auto; text-align: center;">
 
   <img
-    src="/assets/images/secrets/mandckeen/mandckeen.png"
-    alt="Mandckeen"
+    src="/assets/images/secrets/mandckeen/burger_squad.png"
+    alt="Burger squad"
     style="
       width: 100%;
       height: auto;
@@ -23,7 +23,7 @@ permalink: /secrets/mandckeen/
     line-height: 1.5;
     opacity: 0.9;
   ">
-    what would I do without you? 😅🫶🍻
+    Do you remember that dream? Where we buy out a row of brownstones? We'll have wine and movie nights, AYCE raids, karaoke, more cookie competitions, and our dogs will be friends.
   </p>
 
 </div>
