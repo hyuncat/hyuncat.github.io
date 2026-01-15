@@ -23,7 +23,7 @@ permalink: /secrets/burgersquad/
     line-height: 1.5;
     opacity: 0.9;
   ">
-    Do you remember that dream? Where we buy out a row of brownstones? We'll have wine and movie nights, AYCE raids, karaoke, more cookie competitions, and our dogs will be friends.
+    Do you remember that dream? Where we buy out a row of brownstones? We'll have more wine and movie nights, AYCE raids, karaoke, bakeoffs, and our dogs will be friends.
   </p>
 
 </div>
