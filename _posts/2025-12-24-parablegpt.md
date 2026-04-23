@@ -82,9 +82,9 @@ Instead he landed upon a set of virtues I'd forsaken in my flux between ego and 
 Perhaps it is this context which would best set the stage for my final project for this course, ParableGPT.
 
 ## ParableGPT, in context
-Admittedly, the idea for ParableGPT was incepted way before I'd read Tolstoy. The idea was simple: to train a locally-hosted large language model (LLM) to spit out parables in the style of various religions using retrieval-augmented generation (RAG).
+Admittedly, ParableGPT was incepted before I'd read Tolstoy. The idea was simple: to train a locally-hosted large language model (LLM) to spit out parables in the style of various religions using retrieval-augmented generation (RAG).
 
-Rather, ParableGPT came from wanting to poke fun at the untouchable sanctity of holy literature; a snapshot of my own spiritual views at the time, concerning the unceremonious nature of cognition and human language as sophisticated probability maximizing machines.
+Rather, the idea for ParableGPT came from wanting to poke fun at the untouchable sanctity of holy literature; a snapshot of my own spiritual views at the time, concerning the unceremonious nature of cognition and human language as sophisticated probability maximizing machines.
 
 ### The large language model
 Underlying ParableGPT is an LLM, a computational neural network, with 'neurons' (each storing a single number) arranged in layers, such that:
@@ -166,6 +166,7 @@ With the goal of nirvana—liberation from suffering and the cycle of rebirth
 - Live simply
 - Live modestly
 - Wu Wei - Effortless action in harmony with the world
+
 And to strive to live in accordance to the three treasures:
 - Compassion
 - Frugality
